@@ -1,4 +1,4 @@
-<h1 align="center">GitHub Statistics + Overview</h1>
+<h1 align="center">GitHub Statistics</h1>
 
 GitHub Statistics automatically compiles various GitHub user statistics (including private stats) that can then be displayed using GitHub Overview:
 
