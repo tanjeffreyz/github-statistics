@@ -30,7 +30,7 @@ jobs:
     - name: Run GitHub Statistics
       run: |
         java --version
-        ::set-output name=cm::$(java -cp target/classes Main)
+        echo '::set-output name=cm::$(java -cp target/classes Main)\n'
       id: result
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
