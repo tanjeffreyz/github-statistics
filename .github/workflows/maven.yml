@@ -30,7 +30,7 @@ jobs:
     - name: Compile statistics
       run: |
         java --version
-        java -cp target/classes Main
+        java -cp target/gs-1.0-jar-with-dependencies.jar Main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
