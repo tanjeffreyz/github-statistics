@@ -27,7 +27,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Compile Statistics
+    - name: Run GitHub Statistics
       run: |
         java --version
         java -cp target/classes Main
