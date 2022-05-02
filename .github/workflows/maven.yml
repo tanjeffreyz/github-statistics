@@ -30,9 +30,7 @@ jobs:
     - name: Run GitHub Statistics
       run: |
         java --version
-        COMMIT_MESSAGE=$(java -cp target/classes Main)
-        echo "::set-output name=COMMIT_MESSAGE::$COMMIT_MESSAGE"
-      id: cm
+        java -cp target/classes Main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -42,6 +40,5 @@ jobs:
         git config --global user.name 'tanjeffreyz/github-statistics'
         git config --global user.email 'tanjeffreyz@users.noreply.github.com'
         git add *
-        echo "${{ steps.cm.outputs.COMMIT_MESSAGE }}"
-        git commit -m "${{ env.COMMIT_MESSAGE }}"
+        git commit -m "Successfully compiled statistics"
         git push
