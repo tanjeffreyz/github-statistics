@@ -27,4 +27,5 @@ jobs:
 
     - name: Test Run
       run: |
-        java -cp java Main
+        ls
+        java -cp target/classes Main
