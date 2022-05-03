@@ -365,6 +365,7 @@
           "hasNextPage": false,
           "endCursor": "Y3Vyc29yOnYyOpIAzhf06s4\u003d"
         },
+        "totalCount": 12,
         "nodes": [
           {
             "nameWithOwner": "cs186-student/sp22-proj5-tanjeffreyz",
@@ -450,10 +451,9 @@
             },
             "forkCount": 0
           }
-        ],
-        "totalCount": 12
+        ]
       }
     }
   },
-  "testDate": "Mon May 02 22:52:24 PDT 2022"
+  "testDate": "Mon May 02 23:56:58 PDT 2022"
 }

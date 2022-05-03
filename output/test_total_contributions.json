@@ -1,0 +1,30 @@
+{
+  "data": {
+    "viewer": {
+      "y2022": {
+        "totalPullRequestContributions": 0,
+        "totalCommitContributions": 562,
+        "totalPullRequestReviewContributions": 0,
+        "contributionCalendar": {
+          "totalContributions": 571
+        }
+      },
+      "y2021": {
+        "totalPullRequestContributions": 0,
+        "totalCommitContributions": 2263,
+        "totalPullRequestReviewContributions": 0,
+        "contributionCalendar": {
+          "totalContributions": 2275
+        }
+      },
+      "y2020": {
+        "totalPullRequestContributions": 0,
+        "totalCommitContributions": 32,
+        "totalPullRequestReviewContributions": 1,
+        "contributionCalendar": {
+          "totalContributions": 35
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ package query;
 import com.google.gson.JsonObject;
 import disk.FileManager;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class Query {
@@ -24,5 +25,17 @@ public class Query {
 
     public CompletableFuture<JsonObject> contributionYears() {
         return client.asyncRequest(TARGET, fileManager.loadQuery("contribution_years"));
+    }
+
+    public CompletableFuture<JsonObject> totalContributions(List<Integer> years) {
+        String template = fileManager.loadQuery("contributions_per_year");
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ viewer {");
+        for (int year : years) {
+            sb.append(template.replace("__FROM__", String.valueOf(year))
+                    .replace("__TO__", String.valueOf(year + 1)));
+        }
+        sb.append("} }");
+        return client.asyncRequest(TARGET, sb.toString());
     }
 }

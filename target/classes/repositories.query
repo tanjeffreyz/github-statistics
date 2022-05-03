@@ -34,6 +34,7 @@
         hasNextPage
         endCursor
       }
+      totalCount
       nodes {
         nameWithOwner
         stargazers {
@@ -41,7 +42,6 @@
         }
         forkCount
       }
-      totalCount
     }
   }
 }
