@@ -1,0 +1,459 @@
+{
+  "data": {
+    "viewer": {
+      "repositories": {
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "Y3Vyc29yOnYyOpIAzhPGre4\u003d"
+        },
+        "totalCount": 35,
+        "nodes": [
+          {
+            "nameWithOwner": "tanjeffreyz/auto-maple",
+            "stargazers": {
+              "totalCount": 50
+            },
+            "issues": {
+              "totalCount": 42
+            },
+            "forkCount": 39
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/electrotactile-braille-display",
+            "stargazers": {
+              "totalCount": 1
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "Berkeley-CS61B-Student/sp21-proj3-g538",
+            "stargazers": {
+              "totalCount": 1
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "Marble-Rundown/Animarble",
+            "stargazers": {
+              "totalCount": 1
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 1
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/github-statistics",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj5-tanjeffreyz",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/github-overview",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/tanjeffreyz",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/generative-adversarial-networks",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj4-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/idle",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj3-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj2-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/gitlet",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/oz-session-toolkit",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/deep-residual-learning",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/poe-stash-companion",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj1-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj0-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/polishing-igloos",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "mineramc/cs170_project",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/lenet-5",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj4-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj3-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj2-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj1-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-lab-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/toolbox",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/fixational-eye-movement-prediction",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/tanjeffreyz.github.io",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/coding-challenges",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "mineramc/r6drone",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "tanjeffreyz/uc-berkeley",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "Berkeley-CS61B-Student/snaps-sp21-s1288",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "Berkeley-CS61B-Student/sp21-s1288",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "issues": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          }
+        ]
+      },
+      "repositoriesContributedTo": {
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "Y3Vyc29yOnYyOpIAzhf06s4\u003d"
+        },
+        "nodes": [
+          {
+            "nameWithOwner": "cs186-student/sp22-proj5-tanjeffreyz",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj4-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj3-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj2-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj1-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "cs186-student/sp22-proj0-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj4-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj3-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj2-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "upenu/BearNotes",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-proj1-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          },
+          {
+            "nameWithOwner": "61c-student/fa21-lab-tanjeffreyz02",
+            "stargazers": {
+              "totalCount": 0
+            },
+            "forkCount": 0
+          }
+        ],
+        "totalCount": 12
+      }
+    }
+  },
+  "testDate": "Mon May 02 22:52:24 PDT 2022"
+}

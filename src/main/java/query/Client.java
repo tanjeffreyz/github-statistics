@@ -11,14 +11,13 @@ import java.util.concurrent.CompletableFuture;
 
 
 public class Client {
-    private HttpClient CLIENT;
+    private final HttpClient CLIENT;
 
     public Client() {
         CLIENT = HttpClient.newHttpClient();
     }
 
-    public CompletableFuture<JsonObject> asyncRequest(String url, String query)
-            throws URISyntaxException {
+    public CompletableFuture<JsonObject> asyncRequest(String url, String query) {
         String accessToken = System.getenv("ACCESS_TOKEN");
         if (accessToken == null) {
             accessToken = "";
