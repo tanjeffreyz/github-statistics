@@ -2,3 +2,4 @@ Main.class
 query\Query.class
 disk\FileManager.class
 query\Client.class
+query\Statistics.class
