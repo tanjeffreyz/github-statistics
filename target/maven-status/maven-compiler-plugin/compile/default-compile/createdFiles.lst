@@ -1,4 +1,4 @@
-disk\FileManager.class
 Main.class
-query\Client.class
 query\Query.class
+disk\FileManager.class
+query\Client.class
