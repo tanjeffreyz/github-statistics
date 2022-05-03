@@ -1,13 +1,12 @@
 package query;
 
-import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.http.*;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
 
 
@@ -25,10 +24,15 @@ public class Client {
             accessToken = "";
         }
 
+        JsonObject body = new JsonObject();
+        body.addProperty("query", query);
+
         HttpRequest req = HttpRequest.newBuilder()
-                .uri(new URI(url))
+                .uri(URI.create(url))
                 .header("Authorization", "bearer " + accessToken)
-                .GET()
+                .POST(HttpRequest.BodyPublishers.ofString(
+                        body.toString(),
+                        StandardCharsets.UTF_8))
                 .build();
 
         return CLIENT

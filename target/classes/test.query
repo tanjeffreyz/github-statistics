@@ -1,0 +1,6 @@
+{
+  viewer {
+    login
+    name
+  }
+}

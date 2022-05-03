@@ -11,7 +11,7 @@ public class FileManager {
     }
 
     public String loadQuery(String queryName) {
-        Path path = Paths.get("queries", queryName + ".txt");
+        Path path = Paths.get(queryName + ".query");
         StringBuilder sb = new StringBuilder();
         InputStream in = getClass().getClassLoader().getResourceAsStream(path.toString());
         if (in != null) {

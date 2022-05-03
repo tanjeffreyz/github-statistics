@@ -12,12 +12,13 @@ public class Main {
         FileManager fileManager = new FileManager();
 
         try {
+            System.out.println(fileManager.loadQuery("test"));
             CompletableFuture<JsonObject> response = client.asyncRequest(
                     "https://api.github.com/graphql",
                     fileManager.loadQuery("test")
             );
             JsonObject json = response.get();
-            System.out.println(json.get("message"));
+            System.out.println(json);
         } catch (URISyntaxException | InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
