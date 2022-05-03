@@ -37,8 +37,8 @@ jobs:
         
     - name: Commit new outputs
       run: |
-        git config --global user.name 'tanjeffreyz/github-statistics'
-        git config --global user.email 'tanjeffreyz@users.noreply.github.com'
+        git config --global user.name 'gs-service'
+        git config --global user.email 'gs-service@tanjeffreyz.github.io'
         git add *
         git commit -m 'Updated statistics'
         git push
