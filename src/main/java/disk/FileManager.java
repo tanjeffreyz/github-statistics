@@ -9,9 +9,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
+/**
+ * Manages loading and saving various files.
+ */
 public class FileManager {
-    private static String OUTPUT_DIR = "output";
+    private static final String OUTPUT_DIR = "output";
 
+    /**
+     * Loads the given query file from "/resources".
+     * @param queryName     Name of the query to load
+     * @return              String contents of the query
+     */
     public String loadQuery(String queryName) {
         Path path = Paths.get(queryName + ".query");
         StringBuilder sb = new StringBuilder();
@@ -30,6 +38,11 @@ public class FileManager {
         return sb.toString();
     }
 
+    /**
+     * Saves a JSON object to FILENAME.json in "/output".
+     * @param fileName      Name of file to save to, ".json" extension is automatically appended
+     * @param json          JSON object to save
+     */
     public void saveOutput(String fileName, JsonObject json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         Path target = Paths.get(OUTPUT_DIR, fileName + ".json");

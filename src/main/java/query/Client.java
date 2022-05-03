@@ -4,12 +4,14 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.http.*;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
 
 
+/**
+ * Sends asynchronous HTTP requests.
+ */
 public class Client {
     private final HttpClient CLIENT;
 
