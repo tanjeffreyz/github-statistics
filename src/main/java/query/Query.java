@@ -8,27 +8,27 @@ import java.util.concurrent.CompletableFuture;
 
 public class Query {
     public static final String TARGET = "https://api.github.com/graphql";
-    private Client client;
-    private FileManager fileManager;
+    private final Client CLIENT;
+    private final FileManager FILE_MANAGER;
 
     public Query() {
-        client = new Client();
-        fileManager = new FileManager();
+        CLIENT = new Client();
+        FILE_MANAGER = new FileManager();
     }
 
     public CompletableFuture<JsonObject> repositories(String ownedCursor, String contributedCursor) {
-        String query = fileManager.loadQuery("repositories")
+        String query = FILE_MANAGER.loadQuery("repositories")
                 .replaceFirst("__OWNED_CURSOR__", ownedCursor)
                 .replaceFirst("__CONTRIBUTED_CURSOR__", contributedCursor);
-        return client.asyncRequest(TARGET, query);
+        return CLIENT.asyncRequest(TARGET, query);
     }
 
     public CompletableFuture<JsonObject> contributionYears() {
-        return client.asyncRequest(TARGET, fileManager.loadQuery("contribution_years"));
+        return CLIENT.asyncRequest(TARGET, FILE_MANAGER.loadQuery("contribution_years"));
     }
 
     public CompletableFuture<JsonObject> totalContributions(List<Integer> years) {
-        String template = fileManager.loadQuery("contributions_per_year");
+        String template = FILE_MANAGER.loadQuery("contributions_per_year");
         StringBuilder sb = new StringBuilder();
         sb.append("{ viewer {");
         for (int year : years) {
@@ -36,6 +36,6 @@ public class Query {
                     .replace("__TO__", String.valueOf(year + 1)));
         }
         sb.append("} }");
-        return client.asyncRequest(TARGET, sb.toString());
+        return CLIENT.asyncRequest(TARGET, sb.toString());
     }
 }
