@@ -23,11 +23,12 @@ public class Main {
 //            );
             CompletableFuture<JsonObject> response = query.repositories("null", "null");
             JsonObject json = response.get();
-            json.addProperty("testDate", (new Date()).toString());
-            fileManager.saveOutput("test_repositories", json);
+
+//            fileManager.saveOutput("test_repositories", json);
 
             response = query.contributionYears();
             json = response.get();
+            json.addProperty("testDate", (new Date()).toString());
             fileManager.saveOutput("test_contribyears", json);
 
             List<Integer> years = new ArrayList<>();
@@ -39,7 +40,8 @@ public class Main {
             }
             response = query.totalContributions(years);
             json = response.get();
-            fileManager.saveOutput("test_total_contributions", json);
+            System.out.println(json);
+//            fileManager.saveOutput("test_total_contributions", json);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
