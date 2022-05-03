@@ -25,6 +25,4 @@ public class Query {
     public CompletableFuture<JsonObject> contributionYears() {
         return client.asyncRequest(TARGET, fileManager.loadQuery("contribution_years"));
     }
-
-    public
 }
