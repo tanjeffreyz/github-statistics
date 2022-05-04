@@ -16,6 +16,7 @@ public class Main {
         Query query = new Query(fileManager);
         List<Job> jobs = new ArrayList<>();
 
+        // Initialize jobs
         jobs.add(new RepositoriesJob(query));
         jobs.add(new UserJob(query));
 

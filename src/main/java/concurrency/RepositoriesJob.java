@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import query.Query;
 import query.Statistics;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 
 
@@ -12,6 +13,9 @@ import java.util.concurrent.ExecutionException;
  * Compiles various stats across all owned and contributed repositories.
  */
 public class RepositoriesJob extends Job {
+    private final Set<String> IGNORED_REPOS;
+    private final Set<String> REPOS;
+
     private String ownedCursor;
     private String contribCursor;
     private int numRepos;
@@ -27,6 +31,16 @@ public class RepositoriesJob extends Job {
         stars = 0;
         forks = 0;
         closedIssues = 0;
+        REPOS = new HashSet<>();
+
+        // Compile ignored repositories
+        IGNORED_REPOS = new HashSet<>();
+        String ignored = System.getenv("IGNORED_REPOSITORIES");
+        if (ignored != null) {
+            for (String name : ignored.split(";")) {
+                IGNORED_REPOS.add(name.strip());
+            }
+        }
 
         RESPONSES.put("repos", QUERY.repositories(ownedCursor, contribCursor));
     }
@@ -44,30 +58,38 @@ public class RepositoriesJob extends Job {
         JsonObject pageInfo = owned.get("pageInfo").getAsJsonObject();
         boolean ownedNext = pageInfo.get("hasNextPage").getAsBoolean();
         ownedCursor = ownedNext ? pageInfo.get("endCursor").getAsString() : "null";
-        numRepos += owned.get("totalCount").getAsInt();
 
         JsonArray nodes = owned.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
-            stars += repo.get("stargazers").getAsJsonObject()
-                    .get("totalCount").getAsInt();
-            closedIssues += repo.get("issues").getAsJsonObject()
-                    .get("totalCount").getAsInt();
-            forks += repo.get("forkCount").getAsInt();
+            String name = repo.get("nameWithOwner").getAsString();
+            if (!IGNORED_REPOS.contains(name)) {
+                stars += repo.get("stargazers").getAsJsonObject()
+                        .get("totalCount").getAsInt();
+                closedIssues += repo.get("issues").getAsJsonObject()
+                        .get("totalCount").getAsInt();
+                forks += repo.get("forkCount").getAsInt();
+                numRepos++;
+                REPOS.add(name);
+            }
         }
 
         // Process contributed repositories
         pageInfo = contrib.get("pageInfo").getAsJsonObject();
         boolean contribNext = pageInfo.get("hasNextPage").getAsBoolean();
         contribCursor = contribNext ? pageInfo.get("endCursor").getAsString() : "null";
-        numRepos += contrib.get("totalCount").getAsInt();
 
         nodes = contrib.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
-            stars += repo.get("stargazers").getAsJsonObject()
-                    .get("totalCount").getAsInt();
-            forks += repo.get("forkCount").getAsInt();
+            String name = repo.get("nameWithOwner").getAsString();
+            if (!IGNORED_REPOS.contains(name)) {
+                stars += repo.get("stargazers").getAsJsonObject()
+                        .get("totalCount").getAsInt();
+                forks += repo.get("forkCount").getAsInt();
+                numRepos++;
+                REPOS.add(name);
+            }
         }
 
         // Set up next run if needed
