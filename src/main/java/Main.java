@@ -1,49 +1,45 @@
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
+import concurrency.Job;
+import concurrency.RepositoriesJob;
+import concurrency.UserJob;
 import disk.FileManager;
 import query.Query;
-
+import query.Statistics;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 
 
 public class Main {
     public static void main(String[] args) {
-        Query query = new Query();
         FileManager fileManager = new FileManager();
+        Statistics statistics = new Statistics(fileManager);
+        Query query = new Query(fileManager);
+        List<Job> jobs = new ArrayList<>();
 
-        try {
-//            System.out.println(fileManager.loadQuery("test"));
-//            CompletableFuture<JsonObject> response = client.asyncRequest(
-//                    "https://api.github.com/graphql",
-//                    fileManager.loadQuery("repositories")
-//            );
-            CompletableFuture<JsonObject> response = query.repositories("null", "null");
-            JsonObject json = response.get();
+        jobs.add(new RepositoriesJob(query));
+        jobs.add(new UserJob(query));
 
-//            fileManager.saveOutput("test_repositories", json);
-
-            response = query.contributionYears();
-            json = response.get();
-            json.addProperty("testDate", (new Date()).toString());
-            fileManager.saveOutput("test_contribyears", json);
-
-            List<Integer> years = new ArrayList<>();
-            for (JsonElement jsonElement : json.get("data").getAsJsonObject()
-                    .get("user").getAsJsonObject()
-                    .get("contributionsCollection").getAsJsonObject()
-                    .get("contributionYears").getAsJsonArray()) {
-                years.add(jsonElement.getAsInt());
+        // Run jobs
+        int index = 0;
+        int numFinished = 0;
+        boolean[] finished = new boolean[jobs.size()];
+        Arrays.fill(finished, false);
+        while (numFinished < jobs.size()) {
+            if (!finished[index]) {
+                Job job = jobs.get(index);
+                if (!job.done()) {
+                    if (job.ready()) {
+                        job.run();
+                    }
+                } else {
+                    job.finish(statistics);
+                    finished[index] = true;
+                    numFinished++;
+                }
             }
-            response = query.totalContributions(years);
-            json = response.get();
-            System.out.println(json);
-//            fileManager.saveOutput("test_total_contributions", json);
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
+            index = (index + 1) % jobs.size();
         }
+
+        statistics.export();
     }
 }

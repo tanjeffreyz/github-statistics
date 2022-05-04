@@ -14,9 +14,9 @@ public class Query {
     private final Client CLIENT;
     private final FileManager FILE_MANAGER;
 
-    public Query() {
+    public Query(FileManager fileManager) {
         CLIENT = new Client();
-        FILE_MANAGER = new FileManager();
+        FILE_MANAGER = fileManager;
     }
 
     /**
