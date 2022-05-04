@@ -1,5 +1,8 @@
+concurrency\Job.class
 Main.class
 query\Query.class
+concurrency\RepositoriesJob.class
 disk\FileManager.class
+concurrency\UserJob.class
 query\Client.class
 query\Statistics.class
