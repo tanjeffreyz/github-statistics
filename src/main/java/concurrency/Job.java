@@ -1,9 +1,7 @@
 package concurrency;
 
 import com.google.gson.JsonObject;
-import data.Data;
 import query.Query;
-import data.Statistics;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -18,9 +16,16 @@ public abstract class Job {
     protected final Query QUERY;
     protected boolean done;
 
+    public Job() {
+        QUERY = null;
+        RESPONSES = new HashMap<>();
+        done = false;
+    }
+
     public Job(Query query) {
         QUERY = query;
         RESPONSES = new HashMap<>();
+        done = false;
     }
 
     /**
