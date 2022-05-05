@@ -1,7 +1,0 @@
-{
-  user(login: "tanjeffreyz") {
-    contributionsCollection {
-      contributionYears
-    }
-  }
-}
