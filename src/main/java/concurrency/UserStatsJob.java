@@ -4,8 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import query.Query;
-import query.Statistics;
-
+import data.Statistics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -14,20 +13,22 @@ import java.util.concurrent.ExecutionException;
 /**
  * Compiles various user statistics not bound to any specific repository.
  */
-public class UserJob extends Job {
+public class UserStatsJob extends Job {
+    private final Statistics DATA;
     private final List<Integer> CONTRIB_YEARS;
     private int pullRequests;
     private int commits;
     private int pullRequestReviews;
     private int totalContributions;
 
-    public UserJob(Query query) {
+    public UserStatsJob(Query query, Statistics data) {
         super(query);
         CONTRIB_YEARS = new ArrayList<>();
         pullRequests = 0;
         commits = 0;
         pullRequestReviews = 0;
         totalContributions = 0;
+        DATA = data;
 
         RESPONSES.put("years", QUERY.contributionYears());
     }
@@ -62,8 +63,8 @@ public class UserJob extends Job {
     }
 
     @Override
-    public void finish(Statistics stats) {
-        stats.addTo("totalContributions", totalContributions);
-        stats.addTo("pullRequests", pullRequests + pullRequestReviews);
+    public void finish() {
+        DATA.addTo("totalContributions", totalContributions);
+        DATA.addTo("pullRequests", pullRequests + pullRequestReviews);
     }
 }

@@ -1,9 +1,9 @@
 import concurrency.Job;
-import concurrency.AllRepositoriesJob;
-import concurrency.UserJob;
+import concurrency.RepositoryStatsJob;
+import concurrency.UserStatsJob;
 import disk.FileManager;
 import query.Query;
-import query.Statistics;
+import data.Statistics;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,8 +17,8 @@ public class Main {
         List<Job> jobs = new ArrayList<>();
 
         // Initialize jobs
-        jobs.add(new AllRepositoriesJob(query));
-        jobs.add(new UserJob(query));
+        jobs.add(new RepositoryStatsJob(query, statistics));
+        jobs.add(new UserStatsJob(query, statistics));
 
         // Run jobs
         int index = 0;
@@ -33,7 +33,7 @@ public class Main {
                         job.run();
                     }
                 } else {
-                    job.finish(statistics);
+                    job.finish();
                     finished[index] = true;
                     numFinished++;
                 }

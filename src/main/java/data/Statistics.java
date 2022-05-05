@@ -1,4 +1,4 @@
-package query;
+package data;
 
 import com.google.gson.JsonObject;
 import disk.FileManager;
@@ -9,13 +9,13 @@ import java.util.Map;
 /**
  * Stores various different stats to be displayed by GitHub Overview.
  */
-public class Statistics {
+public class Statistics extends Data {
     private final Map<String, Integer> STATS;
-    private final FileManager FILE_MANAGER;
 
     public Statistics(FileManager fileManager) {
-        FILE_MANAGER = fileManager;
+        super(fileManager);
         STATS = new HashMap<>();
+        target = "stats";
         String[] keys = {
                 "issues",
                 "pullRequests",
@@ -45,11 +45,12 @@ public class Statistics {
     /**
      * Saves final statistics into a JSON file in "/output".
      */
-    public void export() {
+    @Override
+    protected JsonObject toJson() {
         JsonObject json = new JsonObject();
         for (String key : STATS.keySet()) {
             json.addProperty(key, STATS.get(key));
         }
-        FILE_MANAGER.saveOutput("stats", json);
+        return json;
     }
 }

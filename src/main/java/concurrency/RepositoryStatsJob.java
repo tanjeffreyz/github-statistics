@@ -4,7 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import query.Query;
-import query.Statistics;
+import data.Statistics;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 
@@ -12,7 +12,8 @@ import java.util.concurrent.ExecutionException;
 /**
  * Compiles various stats across all owned and contributed repositories.
  */
-public class AllRepositoriesJob extends Job {
+public class RepositoryStatsJob extends Job {
+    private final Statistics DATA;
     private final Set<String> IGNORED_REPOS;
     private final Set<String> REPOS;
 
@@ -23,7 +24,7 @@ public class AllRepositoriesJob extends Job {
     private int forks;
     private int closedIssues;
 
-    public AllRepositoriesJob(Query query) {
+    public RepositoryStatsJob(Query query, Statistics data) {
         super(query);
         ownedCursor = "null";
         contribCursor = "null";
@@ -32,6 +33,7 @@ public class AllRepositoriesJob extends Job {
         forks = 0;
         closedIssues = 0;
         REPOS = new HashSet<>();
+        DATA = data;
 
         // Compile ignored repositories
         IGNORED_REPOS = new HashSet<>();
@@ -102,10 +104,10 @@ public class AllRepositoriesJob extends Job {
     }
 
     @Override
-    public void finish(Statistics stats) {
-        stats.addTo("issues", closedIssues);
-        stats.addTo("stars", stars);
-        stats.addTo("forks", forks);
-        stats.addTo("repositories", numRepos);
+    public void finish() {
+        DATA.addTo("issues", closedIssues);
+        DATA.addTo("stars", stars);
+        DATA.addTo("forks", forks);
+        DATA.addTo("repositories", numRepos);
     }
 }

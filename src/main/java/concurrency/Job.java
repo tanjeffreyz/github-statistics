@@ -1,8 +1,9 @@
 package concurrency;
 
 import com.google.gson.JsonObject;
+import data.Data;
 import query.Query;
-import query.Statistics;
+import data.Statistics;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -18,8 +19,8 @@ public abstract class Job {
     protected boolean done;
 
     public Job(Query query) {
-        RESPONSES = new HashMap<>();
         QUERY = query;
+        RESPONSES = new HashMap<>();
     }
 
     /**
@@ -69,8 +70,7 @@ public abstract class Job {
     }
 
     /**
-     * Performs the synchronous part of the Job, updates Statistics.
-     * @param stats     The Statistics object to modify.
+     * Performs the synchronous part of the Job, updates DATA.
      */
-    public abstract void finish(Statistics stats);
+    public abstract void finish();
 }
