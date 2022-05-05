@@ -26,7 +26,7 @@ public class Query {
      * @return                      JSON response
      */
     public CompletableFuture<JsonObject> repositories(String ownedCursor, String contributedCursor) {
-        String query = FILE_MANAGER.loadQuery("repositories")
+        String query = FILE_MANAGER.loadQuery("repository_stats")
                 .replaceFirst("__OWNED_CURSOR__", ownedCursor)
                 .replaceFirst("__CONTRIBUTED_CURSOR__", contributedCursor);
         return CLIENT.asyncRequest(TARGET, query);
