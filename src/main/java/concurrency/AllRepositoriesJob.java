@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * Compiles various stats across all owned and contributed repositories.
  */
-public class RepositoriesJob extends Job {
+public class AllRepositoriesJob extends Job {
     private final Set<String> IGNORED_REPOS;
     private final Set<String> REPOS;
 
@@ -23,7 +23,7 @@ public class RepositoriesJob extends Job {
     private int forks;
     private int closedIssues;
 
-    public RepositoriesJob(Query query) {
+    public AllRepositoriesJob(Query query) {
         super(query);
         ownedCursor = "null";
         contribCursor = "null";

@@ -1,5 +1,5 @@
 import concurrency.Job;
-import concurrency.RepositoriesJob;
+import concurrency.AllRepositoriesJob;
 import concurrency.UserJob;
 import disk.FileManager;
 import query.Query;
@@ -17,7 +17,7 @@ public class Main {
         List<Job> jobs = new ArrayList<>();
 
         // Initialize jobs
-        jobs.add(new RepositoriesJob(query));
+        jobs.add(new AllRepositoriesJob(query));
         jobs.add(new UserJob(query));
 
         // Run jobs
