@@ -1,6 +1,8 @@
 import concurrency.Job;
+import concurrency.RepositoryInfoJob;
 import concurrency.RepositoryStatsJob;
 import concurrency.UserStatsJob;
+import data.Catalog;
 import disk.FileManager;
 import query.Query;
 import data.Statistics;
@@ -12,13 +14,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         FileManager fileManager = new FileManager();
-        Statistics statistics = new Statistics(fileManager);
         Query query = new Query(fileManager);
-        List<Job> jobs = new ArrayList<>();
+
+        // Initialize Data objects
+        Statistics statistics = new Statistics("stats", fileManager);
+        Catalog catalog = new Catalog("info", fileManager);
 
         // Initialize jobs
+        List<Job> jobs = new ArrayList<>();
         jobs.add(new RepositoryStatsJob(query, statistics));
         jobs.add(new UserStatsJob(query, statistics));
+        jobs.add(new RepositoryInfoJob(query, catalog));
 
         // Run jobs
         int index = 0;
@@ -42,5 +48,6 @@ public class Main {
         }
 
         statistics.export();
+        catalog.export();
     }
 }

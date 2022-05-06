@@ -47,6 +47,12 @@ public class FileManager {
         Path target = Paths.get(OUTPUT_DIR, fileName + ".json");
         FileWriter fileWriter = null;
 
+        // Make directory if it doesn't exist
+        File dir = target.toFile().getParentFile();
+        if (!dir.isDirectory()) {
+            dir.mkdirs();
+        }
+
         try {
             fileWriter = new FileWriter(target.toString());
             fileWriter.write(gson.toJson(json));

@@ -20,13 +20,26 @@ public class Query {
     }
 
     /**
-     * Requests a page of repository information.
+     * Requests a page of repository stats such as stars and issues.
      * @param ownedCursor           Cursor to start from for querying owned repos
      * @param contributedCursor     Cursor to start from when querying contributed repos
      * @return                      JSON response
      */
-    public CompletableFuture<JsonObject> repositories(String ownedCursor, String contributedCursor) {
+    public CompletableFuture<JsonObject> repositoryStats(String ownedCursor, String contributedCursor) {
         String query = FILE_MANAGER.loadQuery("repository_stats")
+                .replaceFirst("__OWNED_CURSOR__", ownedCursor)
+                .replaceFirst("__CONTRIBUTED_CURSOR__", contributedCursor);
+        return CLIENT.asyncRequest(TARGET, query);
+    }
+
+    /**
+     * Requests a page of repository information such as descriptions and languages.
+     * @param ownedCursor           Cursor to start from for querying owned repos
+     * @param contributedCursor     Cursor to start from when querying contributed repos
+     * @return                      JSON response
+     */
+    public CompletableFuture<JsonObject> repositoryInfo(String ownedCursor, String contributedCursor) {
+        String query = FILE_MANAGER.loadQuery("repository_info")
                 .replaceFirst("__OWNED_CURSOR__", ownedCursor)
                 .replaceFirst("__CONTRIBUTED_CURSOR__", contributedCursor);
         return CLIENT.asyncRequest(TARGET, query);

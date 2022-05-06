@@ -1,0 +1,70 @@
+{
+  viewer {
+    repositories(
+      first: 100
+      orderBy: {field: STARGAZERS, direction: DESC}
+      isFork: false
+      after: __OWNED_CURSOR__
+      ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]
+      privacy: PUBLIC
+    ) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        name
+        owner {
+          login
+        }
+        description
+        stargazers {
+          totalCount
+        }
+        forkCount
+        languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
+          nodes {
+            name
+            color
+          }
+        }
+        collaborators {
+          totalCount
+        }
+      }
+    }
+    repositoriesContributedTo(
+      first: 100
+      orderBy: {field: STARGAZERS, direction: DESC}
+      after: __CONTRIBUTED_CURSOR__
+      includeUserRepositories: false
+      contributionTypes: [COMMIT, PULL_REQUEST, REPOSITORY, PULL_REQUEST_REVIEW]
+      privacy: PUBLIC
+    ) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        name
+        owner {
+          login
+        }
+        description
+        stargazers {
+          totalCount
+        }
+        forkCount
+        languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
+          nodes {
+            name
+            color
+          }
+        }
+        collaborators {
+          totalCount
+        }
+      }
+    }
+  }
+}

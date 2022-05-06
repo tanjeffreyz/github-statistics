@@ -12,10 +12,9 @@ import java.util.Map;
 public class Statistics extends Data {
     private final Map<String, Integer> STATS;
 
-    public Statistics(FileManager fileManager) {
-        super(fileManager);
+    public Statistics(String name, FileManager fileManager) {
+        super(name, fileManager);
         STATS = new HashMap<>();
-        target = "stats";
         String[] keys = {
                 "issues",
                 "pullRequests",
@@ -46,11 +45,13 @@ public class Statistics extends Data {
      * Saves final statistics into a JSON file in "/output".
      */
     @Override
-    protected JsonObject toJson() {
+    protected Map<String, JsonObject> toJson() {
         JsonObject json = new JsonObject();
         for (String key : STATS.keySet()) {
             json.addProperty(key, STATS.get(key));
         }
-        return json;
+        Map<String, JsonObject> result = new HashMap<>();
+        result.put(NAME, json);
+        return result;
     }
 }

@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutionException;
 
 
 /**
- * Compiles various stats across all owned and contributed repositories.
+ * Compiles various public and private stats across all owned and contributed repositories.
  */
 public class RepositoryStatsJob extends Job {
     private final Statistics DATA;
@@ -44,7 +44,7 @@ public class RepositoryStatsJob extends Job {
             }
         }
 
-        RESPONSES.put("repos", QUERY.repositories(ownedCursor, contribCursor));
+        RESPONSES.put("repos", QUERY.repositoryStats(ownedCursor, contribCursor));
     }
 
     @Override
@@ -99,7 +99,7 @@ public class RepositoryStatsJob extends Job {
             done = true;
             clearResponses();
         } else {
-            RESPONSES.put("repos", QUERY.repositories(ownedCursor, contribCursor));
+            RESPONSES.put("repos", QUERY.repositoryStats(ownedCursor, contribCursor));
         }
     }
 
