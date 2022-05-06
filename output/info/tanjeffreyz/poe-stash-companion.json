@@ -1,0 +1,14 @@
+{
+  "name": "poe-stash-companion",
+  "owner": "tanjeffreyz",
+  "description": "Uses the Path of Exile public API to automatically stash inventory items by type",
+  "languages": [
+    {
+      "name": "AutoHotkey",
+      "color": "#6594b9"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}

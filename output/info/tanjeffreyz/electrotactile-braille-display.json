@@ -1,0 +1,18 @@
+{
+  "name": "electrotactile-braille-display",
+  "owner": "tanjeffreyz",
+  "description": "Refreshable braille display that uses electrical pulses to simulate the feeling of braille dots on the user\u0027s fingertips",
+  "languages": [
+    {
+      "name": "C++",
+      "color": "#f34b7d"
+    },
+    {
+      "name": "Prolog",
+      "color": "#74283c"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 1,
+  "forks": 0
+}

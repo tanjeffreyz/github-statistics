@@ -1,0 +1,14 @@
+{
+  "name": "deep-residual-learning",
+  "owner": "tanjeffreyz",
+  "description": "PyTorch implementations of the deep residual networks published in \"Deep Residual Learning for Image Recognition\" by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}

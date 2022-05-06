@@ -1,0 +1,14 @@
+{
+  "name": "generative-adversarial-networks",
+  "owner": "tanjeffreyz",
+  "description": "PyTorch implementation of \"Generative Adversarial Networks\" by Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, Yoshua Bengio",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}

@@ -1,0 +1,14 @@
+{
+  "name": "github-statistics",
+  "owner": "tanjeffreyz",
+  "description": "Automatically compiles both public and private user statistics that can be displayed on GitHub profile READMEs",
+  "languages": [
+    {
+      "name": "Java",
+      "color": "#b07219"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
