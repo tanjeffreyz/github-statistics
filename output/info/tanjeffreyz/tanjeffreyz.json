@@ -1,8 +1,13 @@
 {
   "name": "tanjeffreyz",
   "owner": "tanjeffreyz",
-  "description": "GitHub profile README.md",
-  "languages": [],
+  "description": "Dynamic animated graphics for my GitHub profile",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "collaborators": 1,
   "stars": 0,
   "forks": 0
