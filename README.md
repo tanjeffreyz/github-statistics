@@ -10,7 +10,7 @@ displayed in a README:
   </a>
 </div>
 
-<br><br>
+<br>
 
 In addition, GitHub Statistics also compiles repository information, which can be displayed using Markdown:
 
