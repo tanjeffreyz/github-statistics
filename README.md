@@ -10,13 +10,15 @@ displayed in a README:
   </a>
 </div>
 
+<br><br>
+
 In addition, GitHub Statistics also compiles repository information, which can be displayed using Markdown:
 
 ```
 [![](https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics)](https://github.com/tanjeffreyz/github-statistics)
 ```
 
-[![](https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics)](https://github.com/tanjeffreyz/github-statistics)
+[![](https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics&delay=0)](https://github.com/tanjeffreyz/github-statistics)
 
 
 ## Features
