@@ -18,7 +18,11 @@ In addition, GitHub Statistics also compiles repository information, which can b
 [![](https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics)](https://github.com/tanjeffreyz/github-statistics)
 ```
 
-[![](https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics&delay=0)](https://github.com/tanjeffreyz/github-statistics)
+<div align="center" width="100%">
+  <a href="#">
+    <img src="https://tanjeffreyz-github-overview.herokuapp.com/repo/?r=1&c=0&maxR=4&owner=tanjeffreyz&repo=github-statistics&delay=0" />
+  </a>
+</div>
 
 
 ## Features
