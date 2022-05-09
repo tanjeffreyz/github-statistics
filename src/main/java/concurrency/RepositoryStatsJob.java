@@ -59,7 +59,10 @@ public class RepositoryStatsJob extends Job {
         // Process owned repositories
         JsonObject pageInfo = owned.get("pageInfo").getAsJsonObject();
         boolean ownedNext = pageInfo.get("hasNextPage").getAsBoolean();
-        ownedCursor = ownedNext ? pageInfo.get("endCursor").getAsString() : "null";
+        ownedCursor = "null";
+        if (ownedNext) {
+            ownedCursor = String.format("\"%s\"", pageInfo.get("endCursor").getAsString());
+        }
 
         JsonArray nodes = owned.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
@@ -79,7 +82,10 @@ public class RepositoryStatsJob extends Job {
         // Process contributed repositories
         pageInfo = contrib.get("pageInfo").getAsJsonObject();
         boolean contribNext = pageInfo.get("hasNextPage").getAsBoolean();
-        contribCursor = contribNext ? pageInfo.get("endCursor").getAsString() : "null";
+        contribCursor = "null";
+        if (contribNext) {
+            contribCursor = String.format("\"%s\"", pageInfo.get("endCursor").getAsString());
+        }
 
         nodes = contrib.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
