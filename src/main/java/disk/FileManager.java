@@ -70,4 +70,25 @@ public class FileManager {
             }
         }
     }
+
+    /**
+     * Deletes the given output file as well as its parent directory if empty
+     * @param fileName      Path to file to delete
+     */
+    public void deleteOutput(String fileName) {
+        Path target = Paths.get(OUTPUT_DIR, fileName + ".json");
+        File file = target.toFile();
+        File dir = file.getParentFile();
+        file.delete();
+        dir.delete();
+    }
+
+    /**
+     * Returns the given path relative to the OUTPUT_DIR.
+     * @param paths     A path or list of names that make up a path.
+     * @return          The path relative to OUTPUT_DIR.
+     */
+    public static Path getOutputPath(String... paths) {
+        return Paths.get(OUTPUT_DIR, paths);
+    }
 }

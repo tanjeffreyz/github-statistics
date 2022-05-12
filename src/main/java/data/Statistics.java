@@ -45,7 +45,7 @@ public class Statistics extends Data {
      * Saves final statistics into a JSON file in "/output".
      */
     @Override
-    protected Map<String, JsonObject> toJson() {
+    protected Map<String, JsonObject> getOutputs() {
         JsonObject json = new JsonObject();
         for (String key : STATS.keySet()) {
             json.addProperty(key, STATS.get(key));
