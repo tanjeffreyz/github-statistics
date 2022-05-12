@@ -6,7 +6,7 @@ displayed in a README:
 
 <div align="center" width="100%">
   <a href="https://tanjeffreyz-github-overview.herokuapp.com/about">
-    <img src="https://tanjeffreyz-github-overview.herokuapp.com/overview" width="100%" />
+    <img src="https://tanjeffreyz-github-overview.herokuapp.com/overview/?cacheAge=3" width="100%" />
   </a>
 </div>
 
