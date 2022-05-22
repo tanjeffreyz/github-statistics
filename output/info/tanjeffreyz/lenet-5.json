@@ -1,7 +1,7 @@
 {
   "name": "lenet-5",
   "owner": "tanjeffreyz",
-  "description": "PyTorch implementation of LeNet-5 published in \"Gradient-based learning applied to document recognition\" by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner",
+  "description": "PyTorch implementation of LeNet-5 published in \"Gradient-Based Learning Applied to Document Recognition\" by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner",
   "languages": [
     {
       "name": "Python",
