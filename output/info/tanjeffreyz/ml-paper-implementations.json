@@ -1,0 +1,22 @@
+{
+  "name": "ml-paper-implementations",
+  "owner": "tanjeffreyz",
+  "description": "Collection of all my implementations of various machine learning papers",
+  "languages": [
+    {
+      "name": "HTML",
+      "color": "#e34c26"
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    {
+      "name": "CSS",
+      "color": "#563d7c"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
