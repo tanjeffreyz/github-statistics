@@ -1,0 +1,14 @@
+{
+  "name": "auto-maple-resources",
+  "owner": "tanjeffreyz",
+  "description": "Community repository for Auto Maple command books and routines",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 1,
+  "forks": 1
+}
