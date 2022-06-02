@@ -2,7 +2,12 @@
   "name": "batch-normalization",
   "owner": "tanjeffreyz",
   "description": "PyTorch implementation of batch normalization from \"Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift\" by Sergey Ioffe, Christian Szegedy",
-  "languages": [],
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "collaborators": 1,
   "stars": 0,
   "forks": 0
