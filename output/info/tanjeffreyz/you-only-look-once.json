@@ -1,0 +1,9 @@
+{
+  "name": "you-only-look-once",
+  "owner": "tanjeffreyz",
+  "description": "PyTorch implementation of the YOLO architecture presented in \"You Only Look Once: Unified, Real-Time Object Detection\" by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
+  "languages": [],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
