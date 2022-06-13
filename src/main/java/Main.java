@@ -18,7 +18,7 @@ public class Main {
 
         // Initialize Data objects
         Statistics statistics = new Statistics("stats", fileManager);
-        Catalog catalog = new Catalog("info", fileManager);
+        Catalog catalog = new Catalog("repositories", fileManager);
 
         // Initialize jobs
         List<Job> jobs = new ArrayList<>();
