@@ -1,0 +1,22 @@
+{
+  "name": "coding-challenge-companion",
+  "owner": "tanjeffreyz",
+  "description": "Chrome extension that pushes coding challenge solutions to GitHub upon successful submission",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a"
+    },
+    {
+      "name": "HTML",
+      "color": "#e34c26"
+    },
+    {
+      "name": "CSS",
+      "color": "#563d7c"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
