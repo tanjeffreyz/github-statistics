@@ -1,7 +1,7 @@
 {
   "name": "ml-paper-implementations",
   "owner": "tanjeffreyz",
-  "description": "Collection of all my implementations of various machine learning papers",
+  "description": "Collection of my implementations of various machine learning papers",
   "languages": [
     {
       "name": "HTML",
