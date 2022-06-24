@@ -1,0 +1,14 @@
+{
+  "name": "sierpinski-triangle",
+  "owner": "tanjeffreyz",
+  "description": "Fun little script that draws a Sierpinski triangle",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
