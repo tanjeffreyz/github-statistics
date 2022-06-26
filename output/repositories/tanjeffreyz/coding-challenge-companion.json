@@ -1,7 +1,7 @@
 {
   "name": "coding-challenge-companion",
   "owner": "tanjeffreyz",
-  "description": "Chrome extension that pushes coding challenge solutions to GitHub upon successful submission",
+  "description": "Chrome extension that pushes coding challenge solutions to GitHub upon successful submission and displays the user\u0027s progress using colorful graphs",
   "languages": [
     {
       "name": "JavaScript",
