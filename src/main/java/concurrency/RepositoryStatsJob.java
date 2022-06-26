@@ -92,9 +92,6 @@ public class RepositoryStatsJob extends Job {
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
             if (!IGNORED_REPOS.contains(name)) {
-                stars += repo.get("stargazers").getAsJsonObject()
-                        .get("totalCount").getAsInt();
-                forks += repo.get("forkCount").getAsInt();
                 numRepos++;
                 REPOS.add(name);
             }
