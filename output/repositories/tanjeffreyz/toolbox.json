@@ -2,7 +2,20 @@
   "name": "toolbox",
   "owner": "tanjeffreyz",
   "description": "Random collection of software I\u0027ve written",
-  "languages": [],
+  "languages": [
+    {
+      "name": "HTML",
+      "color": "#e34c26"
+    },
+    {
+      "name": "TeX",
+      "color": "#3D6117"
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "collaborators": 1,
   "stars": 0,
   "forks": 0
