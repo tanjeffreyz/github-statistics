@@ -1,7 +1,7 @@
 {
   "name": "github-statistics",
   "owner": "tanjeffreyz",
-  "description": "Java backend that automatically compiles both public and private user statistics which can then be displayed on GitHub profile READMEs",
+  "description": "Java backend that uses GraphQL to automatically compile both public and private user statistics, which can then be displayed on GitHub profile READMEs",
   "languages": [
     {
       "name": "Java",
