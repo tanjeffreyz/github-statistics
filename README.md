@@ -4,10 +4,8 @@ Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.heroku
 GitHub Statistics automatically compiles both public and private user statistics that can then be 
 displayed in a profile README:
 
-<br>
-
 <div align="center">
-  <a href="https://github.com/tanjeffreyz"><b>Click here to view my profile as an example</b></a>
+  <a href="https://github.com/tanjeffreyz"><b>Click here to view my profile for a complete example</b></a>
 </div>
 
 <br>
