@@ -16,6 +16,8 @@ public class RepositoryStatsJob extends Job {
     private final Statistics DATA;
     private final Set<String> IGNORED_REPOS;
     private final Set<String> REPOS;
+    private final List<String> OWNED_REPOS;
+    private final List<String> CONTRIB_REPOS;
 
     private String ownedCursor;
     private String contribCursor;
@@ -32,14 +34,16 @@ public class RepositoryStatsJob extends Job {
         stars = 0;
         forks = 0;
         closedIssues = 0;
-        REPOS = new HashSet<>();
         DATA = data;
+        REPOS = new HashSet<>();
+        OWNED_REPOS = new ArrayList<>();
+        CONTRIB_REPOS = new ArrayList<>();
 
         // Compile ignored repositories
         IGNORED_REPOS = new HashSet<>();
         String ignored = System.getenv("IGNORED_REPOSITORIES");
         if (ignored != null) {
-            for (String name : ignored.split(";")) {
+            for (String name : ignored.split(",")) {
                 IGNORED_REPOS.add(name.strip());
             }
         }
@@ -68,7 +72,7 @@ public class RepositoryStatsJob extends Job {
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
-            if (!IGNORED_REPOS.contains(name)) {
+            if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
                 stars += repo.get("stargazers").getAsJsonObject()
                         .get("totalCount").getAsInt();
                 closedIssues += repo.get("issues").getAsJsonObject()
@@ -76,6 +80,7 @@ public class RepositoryStatsJob extends Job {
                 forks += repo.get("forkCount").getAsInt();
                 numRepos++;
                 REPOS.add(name);
+                OWNED_REPOS.add(name);
             }
         }
 
@@ -91,9 +96,12 @@ public class RepositoryStatsJob extends Job {
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
-            if (!IGNORED_REPOS.contains(name)) {
+            if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
+                stars += repo.get("stargazers").getAsJsonObject()
+                        .get("totalCount").getAsInt();
                 numRepos++;
                 REPOS.add(name);
+                CONTRIB_REPOS.add(name);
             }
         }
 
@@ -106,11 +114,37 @@ public class RepositoryStatsJob extends Job {
         }
     }
 
+    private String getHeaderBlock(String header) {
+        String whitespace = " ".repeat(4);
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("/".repeat(Math.max(0, header.length() + 2 * whitespace.length() + 4)));
+        String border = sb.toString();
+        sb.append("\n");
+
+        sb.append("//").append(whitespace).append(header).append(whitespace).append("//");
+        sb.append("\n");
+
+        sb.append(border);
+        return sb.toString();
+    }
+
     @Override
     public void finish() {
         DATA.addTo("issues", closedIssues);
         DATA.addTo("stars", stars);
         DATA.addTo("forks", forks);
         DATA.addTo("repositories", numRepos);
+
+        // Print parsed repositories
+        System.out.println(getHeaderBlock("Owned Repositories"));
+        for (String repo : OWNED_REPOS) {
+            System.out.println(repo);
+        }
+        System.out.println("\n");
+        System.out.println(getHeaderBlock("Contributed Repositories"));
+        for (String repo : CONTRIB_REPOS) {
+            System.out.println(repo);
+        }
     }
 }

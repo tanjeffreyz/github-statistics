@@ -32,7 +32,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        IGNORED_REPOSITORIES: ${{ secrets.IGNORED_REPOSITORIES }}
         
     - name: Commit new outputs
       run: |
