@@ -117,6 +117,7 @@ public class RepositoryStatsJob extends Job {
     private String getHeaderBlock(String header) {
         String whitespace = " ".repeat(4);
         StringBuilder sb = new StringBuilder();
+
         sb.append("/".repeat(Math.max(0, header.length() + 2 * whitespace.length() + 4)));
         String border = sb.toString();
         sb.append("\n");
