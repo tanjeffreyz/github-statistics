@@ -137,6 +137,7 @@ public class RepositoryStatsJob extends Job {
         DATA.addTo("repositories", numRepos);
 
         // Print parsed repositories
+        System.out.println("\n");
         System.out.println(getHeaderBlock("Owned Repositories"));
         for (String repo : OWNED_REPOS) {
             System.out.println(repo);
