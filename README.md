@@ -5,7 +5,7 @@ GitHub Statistics automatically compiles both public and private user statistics
 displayed in a profile README:
 
 <div align="center">
-  <a href="https://github.com/tanjeffreyz"><b>Click here to view my profile for a complete example</b></a>
+  <a href="https://github.com/tanjeffreyz"><b>Click here to view a complete example</b></a>
 </div>
 
 <br>
