@@ -2,7 +2,12 @@
   "name": "planit-backend",
   "owner": "tanjeffreyz",
   "description": "Python backend for Planit that periodically collects assignment information",
-  "languages": [],
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "collaborators": 1,
   "stars": 0,
   "forks": 0
