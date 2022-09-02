@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -38,5 +38,5 @@ jobs:
         git config --global user.name 'github-statistics'
         git config --global user.email 'github-statistics@tanjeffreyz.github.io'
         git add *
-        git commit -m 'Updated statistics'
+        git commit -m 'Updated statistics' || true
         git push
