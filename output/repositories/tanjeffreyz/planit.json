@@ -1,19 +1,11 @@
 {
   "name": "planit",
   "owner": "tanjeffreyz",
-  "description": "Assignment tracker for students that compiles due dates into an interactive, minimalist calendar",
+  "description": "Python backend for Planit that periodically collects assignment information",
   "languages": [
     {
-      "name": "JavaScript",
-      "color": "#f1e05a"
-    },
-    {
-      "name": "HTML",
-      "color": "#e34c26"
-    },
-    {
-      "name": "CSS",
-      "color": "#563d7c"
+      "name": "Python",
+      "color": "#3572A5"
     }
   ],
   "collaborators": 1,
