@@ -4,12 +4,12 @@
   "description": "Assignment tracker for students that compiles due dates into an interactive, minimalist calendar",
   "languages": [
     {
-      "name": "Python",
-      "color": "#3572A5"
-    },
-    {
       "name": "JavaScript",
       "color": "#f1e05a"
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5"
     },
     {
       "name": "HTML",
