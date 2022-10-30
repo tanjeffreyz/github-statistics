@@ -4,11 +4,6 @@ Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.heroku
 GitHub Statistics automatically compiles both public and private user statistics that can then be 
 displayed in a profile README:
 
-<br>
-<div align="center">
-  <a href="https://github.com/tanjeffreyz"><b>Click here to view a complete example</b></a>
-</div>
-<br><br>
 
 <div align="center" width="100%">
   <a href="https://tanjeffreyz-github-overview.herokuapp.com/about">
@@ -16,7 +11,13 @@ displayed in a profile README:
   </a>
 </div>
 
+
 <br>
+<div align="center">
+  <a href="https://github.com/tanjeffreyz"><b>Click here to view a complete example</b></a>
+</div>
+<br><br>
+
 
 In addition, GitHub Statistics also compiles repository information, which can be displayed using Markdown:
 
