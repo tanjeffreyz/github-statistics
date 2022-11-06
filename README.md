@@ -1,6 +1,6 @@
 <h1 align="center">GitHub Statistics</h1>
 
-Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.herokuapp.com/about),
+Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.deta.dev/about),
 GitHub Statistics automatically compiles both public and private user statistics that can then be 
 displayed in a profile README:
 
