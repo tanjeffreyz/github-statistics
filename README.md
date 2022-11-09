@@ -1,13 +1,13 @@
 <h1 align="center">GitHub Statistics</h1>
 
-Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.deta.dev/about),
+Developed alongside [GitHub Overview](https://tanjeffreyz-github-overview.fly.dev/about),
 GitHub Statistics automatically compiles both public and private user statistics that can then be 
 displayed in a profile README:
 
 
 <div align="center" width="100%">
-  <a href="https://tanjeffreyz-github-overview.herokuapp.com/about">
-    <img src="https://tanjeffreyz-github-overview.herokuapp.com/overview?cacheAge=3" width="100%" />
+  <a href="https://tanjeffreyz-github-overview.fly.dev/about">
+    <img src="https://tanjeffreyz-github-overview.fly.dev/overview?cacheAge=3" width="100%" />
   </a>
 </div>
 
