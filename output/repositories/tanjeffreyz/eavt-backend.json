@@ -1,0 +1,18 @@
+{
+  "name": "eavt-backend",
+  "owner": "tanjeffreyz",
+  "description": "Backend server to host and query Oz data",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    {
+      "name": "Shell",
+      "color": "#89e051"
+    }
+  ],
+  "collaborators": 1,
+  "stars": 0,
+  "forks": 0
+}
