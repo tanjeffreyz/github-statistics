@@ -1,7 +1,7 @@
 {
   "name": "eavt-frontend",
   "owner": "tanjeffreyz",
-  "description": "Frontend web app to display Oz data ",
+  "description": "Frontend web app to display Oz experiment data ",
   "languages": [
     {
       "name": "JavaScript",

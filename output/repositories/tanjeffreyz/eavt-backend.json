@@ -1,7 +1,7 @@
 {
   "name": "eavt-backend",
   "owner": "tanjeffreyz",
-  "description": "Python server with a REST API for retrieving, manipulating, and processing Oz data stored in MongoDB",
+  "description": "Python server with a REST API for retrieving, manipulating, and processing Oz experiment data stored in MongoDB",
   "languages": [
     {
       "name": "Python",
