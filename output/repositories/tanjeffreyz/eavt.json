@@ -1,7 +1,7 @@
 {
   "name": "eavt",
   "owner": "tanjeffreyz",
-  "description": "Error Analysis and Visualization Tool (EAVT)",
+  "description": "Full stack web application for viewing, manipulating, and processing Oz experiment data",
   "languages": [
     {
       "name": "JavaScript",
