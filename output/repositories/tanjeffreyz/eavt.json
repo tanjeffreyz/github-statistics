@@ -1,7 +1,7 @@
 {
-  "name": "eavt-frontend",
+  "name": "eavt",
   "owner": "tanjeffreyz",
-  "description": "Frontend web app to display Oz experiment data ",
+  "description": "Error Analysis and Visualization Tool (EAVT)",
   "languages": [
     {
       "name": "JavaScript",
