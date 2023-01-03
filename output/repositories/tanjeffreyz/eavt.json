@@ -1,7 +1,7 @@
 {
   "name": "eavt",
   "owner": "tanjeffreyz",
-  "description": "Full stack web application for viewing, manipulating, and processing Oz experiment data",
+  "description": "Full stack web application for viewing, managing, and processing Oz experiment data",
   "languages": [
     {
       "name": "JavaScript",
