@@ -34,8 +34,8 @@ In addition, GitHub Statistics also compiles repository information, which can b
 
 ## Features
 ### Live Statistics
-The statistics are queried from GitHub's **GraphQL** API using a program built around Java's `HttpClient`, which automatically runs twice every 
-day via a scheduled GitHub Action workflow. Since GitHub Statistics has a personal access token (from an environment secret), it
+The statistics are queried from GitHub's **GraphQL** API using a program built around Java's `HttpClient`, which automatically runs multiple times a 
+day via a scheduled GitHub Action workflow. Since GitHub Statistics has a personal access token from an environment secret, it
 can collect private statistics about the user as well as their repositories, allowing for a more accurate summary of
 their contributions.
 
