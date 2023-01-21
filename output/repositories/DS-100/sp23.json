@@ -1,0 +1,12 @@
+{
+  "name": "sp23",
+  "owner": "DS-100",
+  "languages": [
+    {
+      "name": "Jupyter Notebook",
+      "color": "#DA5B0B"
+    }
+  ],
+  "stars": 0,
+  "forks": 0
+}

@@ -79,15 +79,12 @@ public class RepositoryInfoJob extends Job{
             int forks = repo.get("forkCount").getAsInt();
             JsonArray languages = repo.get("languages").getAsJsonObject()
                     .get("nodes").getAsJsonArray();
-            int collaborators = repo.get("collaborators").getAsJsonObject()
-                    .get("totalCount").getAsInt();
             repo.addProperty("owner", owner);
             repo.remove("stargazers");
             repo.addProperty("stars", stars);
             repo.remove("forkCount");
             repo.addProperty("forks", forks);
             repo.add("languages", languages);
-            repo.addProperty("collaborators", collaborators);
 
             DATA.append(repo);
         }

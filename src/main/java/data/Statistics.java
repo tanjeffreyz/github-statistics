@@ -20,7 +20,6 @@ public class Statistics extends Data {
                 "pullRequests",
                 "totalContributions",
                 "repositories",
-                "forks",
                 "stars"
         };
         for (String key : keys) {

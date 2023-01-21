@@ -23,7 +23,6 @@ public class RepositoryStatsJob extends Job {
     private String contribCursor;
     private int numRepos;
     private int stars;
-    private int forks;
     private int closedIssues;
 
     public RepositoryStatsJob(Query query, Statistics data) {
@@ -32,7 +31,6 @@ public class RepositoryStatsJob extends Job {
         contribCursor = "null";
         numRepos = 0;
         stars = 0;
-        forks = 0;
         closedIssues = 0;
         DATA = data;
         REPOS = new HashSet<>();
@@ -77,7 +75,6 @@ public class RepositoryStatsJob extends Job {
                         .get("totalCount").getAsInt();
                 closedIssues += repo.get("issues").getAsJsonObject()
                         .get("totalCount").getAsInt();
-                forks += repo.get("forkCount").getAsInt();
                 numRepos++;
                 REPOS.add(name);
                 OWNED_REPOS.add(name);
@@ -133,7 +130,6 @@ public class RepositoryStatsJob extends Job {
     public void finish() {
         DATA.addTo("issues", closedIssues);
         DATA.addTo("stars", stars);
-        DATA.addTo("forks", forks);
         DATA.addTo("repositories", numRepos);
 
         // Print parsed repositories

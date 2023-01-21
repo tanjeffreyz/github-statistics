@@ -28,9 +28,6 @@
             color
           }
         }
-        collaborators {
-          totalCount
-        }
       }
     }
     repositoriesContributedTo(
@@ -60,9 +57,6 @@
             name
             color
           }
-        }
-        collaborators {
-          totalCount
         }
       }
     }
