@@ -1,0 +1,21 @@
+{
+  "name": "DS-100.github.io",
+  "owner": "DS-100",
+  "description": "DS100 Course Website",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a"
+    },
+    {
+      "name": "HTML",
+      "color": "#e34c26"
+    },
+    {
+      "name": "SCSS",
+      "color": "#c6538c"
+    }
+  ],
+  "stars": 11,
+  "forks": 13
+}
