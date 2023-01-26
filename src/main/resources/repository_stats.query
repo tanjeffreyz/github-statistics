@@ -5,7 +5,7 @@
       orderBy: {field: STARGAZERS, direction: DESC}
       isFork: false
       after: __OWNED_CURSOR__
-      ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]
+      ownerAffiliations: [OWNER, COLLABORATOR]
     ) {
       pageInfo {
         hasNextPage
