@@ -5,6 +5,10 @@
     {
       "name": "Jupyter Notebook",
       "color": "#DA5B0B"
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5"
     }
   ],
   "stars": 0,
