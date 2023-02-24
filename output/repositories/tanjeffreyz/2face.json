@@ -4,16 +4,16 @@
   "description": "Full stack web application for two-factor authentication (2FA) using facial recognition",
   "languages": [
     {
+      "name": "Java",
+      "color": "#b07219"
+    },
+    {
       "name": "JavaScript",
       "color": "#f1e05a"
     },
     {
       "name": "HTML",
       "color": "#e34c26"
-    },
-    {
-      "name": "CSS",
-      "color": "#563d7c"
     }
   ],
   "stars": 0,
