@@ -2,7 +2,12 @@
   "name": "convolutional-autoencoder",
   "owner": "tanjeffreyz",
   "description": "Pytorch implementation of \"A Better Autoencoder for Image: Convolutional Autoencoder\" by Yifei Zhang",
-  "languages": [],
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "stars": 0,
   "forks": 0
 }
