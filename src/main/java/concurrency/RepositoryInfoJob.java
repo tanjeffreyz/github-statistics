@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import data.Catalog;
 import query.Query;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -16,7 +17,11 @@ import java.util.concurrent.ExecutionException;
 public class RepositoryInfoJob extends Job{
     private final Catalog DATA;
     private final List<JsonObject> REPOS;
-    private static final Set<String> IGNORED_LANGUAGES = Set.of("html", "css", "scss");
+
+    private static final Set<String> IGNORED_LANGUAGES = Set.of(
+            "html", "css", "scss", "tex"
+    );
+    private static final int MIN_LANGUAGES = 2;
 
     private String ownedCursor;
     private String contribCursor;
@@ -98,16 +103,26 @@ public class RepositoryInfoJob extends Job{
         JsonArray nodes = repo.get("languages").getAsJsonObject()
                 .get("nodes").getAsJsonArray();
 
-        // Keep languages that are not in IGNORED_LANGUAGES
-        JsonArray filtered = new JsonArray();
-        for (JsonElement node : nodes) {
+        // Keep at least MIN_LANGUAGES languages that are not in IGNORED_LANGUAGES
+        // Remove languages starting from those with the least priority
+        int numRemovals = nodes.size() - MIN_LANGUAGES;
+        List<JsonElement> filtered = new ArrayList<>();
+        for (int i = nodes.size() - 1; i >= 0; --i) {
+            JsonElement node = nodes.get(i);
             String name = node.getAsJsonObject().get("name").getAsString().toLowerCase();
-            if (!IGNORED_LANGUAGES.contains(name)) {
+            if (numRemovals > 0 && IGNORED_LANGUAGES.contains(name)) {
+                --numRemovals;
+            } else {
                 filtered.add(node);
             }
         }
 
-        // Replace old languages with filtered list
-        repo.get("languages").getAsJsonObject().add("nodes", filtered);
+        // Replace old languages with filtered list (reverse again b/c elements were added in reverse order)
+        JsonArray newLanguages = new JsonArray();
+        Collections.reverse(filtered);
+        for (JsonElement node : filtered) {
+            newLanguages.add(node);
+        }
+        repo.get("languages").getAsJsonObject().add("nodes", newLanguages);
     }
 }
