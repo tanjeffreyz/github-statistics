@@ -7,6 +7,7 @@ import data.Catalog;
 import query.Query;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -15,6 +16,7 @@ import java.util.concurrent.ExecutionException;
 public class RepositoryInfoJob extends Job{
     private final Catalog DATA;
     private final List<JsonObject> REPOS;
+    private static final Set<String> IGNORED_LANGUAGES = Set.of("html", "css", "scss");
 
     private String ownedCursor;
     private String contribCursor;
@@ -46,6 +48,7 @@ public class RepositoryInfoJob extends Job{
         JsonArray nodes = owned.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
+            filterLanguages(repo);
             REPOS.add(repo);
         }
 
@@ -57,6 +60,7 @@ public class RepositoryInfoJob extends Job{
         nodes = contrib.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
             JsonObject repo = r.getAsJsonObject();
+            filterLanguages(repo);
             REPOS.add(repo);
         }
 
@@ -88,5 +92,22 @@ public class RepositoryInfoJob extends Job{
 
             DATA.append(repo);
         }
+    }
+
+    private static void filterLanguages(JsonObject repo) {
+        JsonArray nodes = repo.get("languages").getAsJsonObject()
+                .get("nodes").getAsJsonArray();
+
+        // Keep languages that are not in IGNORED_LANGUAGES
+        JsonArray filtered = new JsonArray();
+        for (JsonElement node : nodes) {
+            String name = node.getAsJsonObject().get("name").getAsString().toLowerCase();
+            if (!IGNORED_LANGUAGES.contains(name)) {
+                filtered.add(node);
+            }
+        }
+
+        // Replace old languages with filtered list
+        repo.get("languages").getAsJsonObject().add("nodes", filtered);
     }
 }
