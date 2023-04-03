@@ -2,12 +2,7 @@
   "name": "cs184-portfolio",
   "owner": "tanjeffreyz",
   "description": "Writeups for our CS 184 projects",
-  "languages": [
-    {
-      "name": "HTML",
-      "color": "#e34c26"
-    }
-  ],
+  "languages": [],
   "stars": 0,
   "forks": 0
 }
