@@ -2,7 +2,12 @@
   "name": "neural-algorithm-of-artistic-style",
   "owner": "tanjeffreyz",
   "description": "PyTorch implementation of \"A Neural Algorithm of Artistic Style\" by Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge",
-  "languages": [],
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "stars": 0,
   "forks": 0
 }
