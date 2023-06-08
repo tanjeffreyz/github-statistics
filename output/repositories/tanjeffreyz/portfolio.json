@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "owner": "tanjeffreyz",
+  "languages": [
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a"
+    },
+    {
+      "name": "CSS",
+      "color": "#563d7c"
+    }
+  ],
+  "stars": 0,
+  "forks": 0
+}
