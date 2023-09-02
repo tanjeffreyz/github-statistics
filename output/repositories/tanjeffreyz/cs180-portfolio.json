@@ -1,0 +1,17 @@
+{
+  "name": "cs180-portfolio",
+  "owner": "tanjeffreyz",
+  "description": "Webpages showcasing my CS 180 computer vision projects",
+  "languages": [
+    {
+      "name": "HTML",
+      "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a"
+    }
+  ],
+  "stars": 0,
+  "forks": 0
+}
