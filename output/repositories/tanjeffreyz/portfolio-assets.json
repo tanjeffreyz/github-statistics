@@ -2,7 +2,12 @@
   "name": "portfolio-assets",
   "owner": "tanjeffreyz",
   "description": "Image and file host for my portfolio website",
-  "languages": [],
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
   "stars": 0,
   "forks": 0
 }
