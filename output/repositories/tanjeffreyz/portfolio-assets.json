@@ -1,7 +1,7 @@
 {
   "name": "portfolio-assets",
   "owner": "tanjeffreyz",
-  "description": "Image and file host for my portfolio website",
+  "description": "File hosting service for my portfolio website",
   "languages": [
     {
       "name": "Python",
