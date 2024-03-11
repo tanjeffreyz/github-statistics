@@ -1,0 +1,20 @@
+{
+  "name": "LLM-PBE",
+  "owner": "QinbinLi",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "color": "#DA5B0B"
+    },
+    {
+      "name": "Shell",
+      "color": "#89e051"
+    }
+  ],
+  "stars": 5,
+  "forks": 0
+}
