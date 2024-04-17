@@ -3,12 +3,12 @@
   "owner": "DS-100",
   "languages": [
     {
-      "name": "TeX",
-      "color": "#3D6117"
-    },
-    {
       "name": "JavaScript",
       "color": "#f1e05a"
+    },
+    {
+      "name": "Jupyter Notebook",
+      "color": "#DA5B0B"
     }
   ],
   "stars": 10,
