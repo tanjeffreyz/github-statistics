@@ -1,0 +1,17 @@
+{
+  "name": "air-bench-2024",
+  "owner": "stanford-crfm",
+  "description": "AIR-Bench 2024 is a safety benchmark that aligns with emerging government regulations and company policies",
+  "languages": [
+    {
+      "name": "Jupyter Notebook",
+      "color": "#DA5B0B"
+    },
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "stars": 4,
+  "forks": 0
+}
