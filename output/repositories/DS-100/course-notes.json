@@ -1,6 +1,7 @@
 {
   "name": "course-notes",
   "owner": "DS-100",
+  "description": "Source code for supplementary resources to accompany lectures",
   "languages": [
     {
       "name": "Python",
