@@ -19,7 +19,7 @@ displayed in a profile README:
 <br><br>
 
 
-In addition, GitHub Statistics also compiles repository information, which can be displayed using Markdown:
+In addition, GitHub Statistics compiles repository information, which can be displayed using Markdown:
 
 ```
 [![](https://tanjeffreyz-github-overview.fly.dev/repo?owner=tanjeffreyz&repo=github-statistics)](https://github.com/tanjeffreyz/github-statistics)
