@@ -1,7 +1,7 @@
 {
   "name": "auto-maple",
   "owner": "tanjeffreyz",
-  "description": "Artificial intelligence software for MapleStory that uses various machine learning and computer vision techniques to navigate challenging in-game environments",
+  "description": "Artificial intelligence for MapleStory that uses various machine learning and computer vision techniques to navigate challenging in-game environments",
   "languages": [
     {
       "name": "Python",
