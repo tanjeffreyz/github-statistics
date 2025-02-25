@@ -1,7 +1,7 @@
 {
   "name": "planit",
   "owner": "tanjeffreyz",
-  "description": "Assignment tracker for students that compiles due dates into an interactive, minimalist calendar",
+  "description": "Assignment tracker for students that automatically compiles due dates into an interactive calendar",
   "languages": [
     {
       "name": "JavaScript",
