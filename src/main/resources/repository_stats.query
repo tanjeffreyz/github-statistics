@@ -28,7 +28,7 @@
       orderBy: {field: STARGAZERS, direction: DESC}
       after: __CONTRIBUTED_CURSOR__
       includeUserRepositories: false
-      contributionTypes: [COMMIT, REPOSITORY]
+      contributionTypes: [REPOSITORY]
     ) {
       pageInfo {
         hasNextPage
