@@ -39,5 +39,4 @@ their contributions.
 
 ### Repository Info Cards
 GitHub Statistics also compiles the information needed for displaying **repository cards** like the one above.
-Each repository's information is stored in its own JSON file under its owner's folder in `/output/repositories`. GitHub Overview can later retrieve 
-this information to render a repository card.
+Each repository's information is stored in its own JSON file under its owner's folder in `/output/repositories`.
