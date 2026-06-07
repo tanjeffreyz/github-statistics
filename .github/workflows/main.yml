@@ -32,6 +32,23 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Checkout GitHub Overview repository
+      uses: actions/checkout@v6
+      with:
+        repository: ${{ github.repository_owner }}/github-overview
+        path: github_overview
+        token: ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Run GitHub Overview script
+      run: |
+        cd github_overview
+        python main.py
         
     - name: Commit new outputs
       run: |
