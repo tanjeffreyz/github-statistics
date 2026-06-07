@@ -57,3 +57,20 @@ jobs:
         git add * || true
         git commit -m 'Updated statistics' || true
         git push
+
+    - name: Checkout GitHub profile repository
+      uses: actions/checkout@v6
+      with:
+        repository: ${{ github.repository_owner }}/${{ github.repository_owner }}
+        path: github_profile
+        token: ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Update GitHub profile
+      run: |
+        cp github_overview/generated_readme.md github_profile/README.md
+        cd github_profile
+        git config --global user.name 'github-overview'
+        git config --global user.email 'github-overview@tanjeffreyz.github.io'
+        git add README.md
+        git commit -m 'Update README.md' || true
+        git push
