@@ -1,6 +1,7 @@
 .idea/
 target/
 *.iml
+github_overview/
 
 # Compiled class file
 *.class
