@@ -19,7 +19,7 @@ displayed in a profile README:
 In addition, GitHub Statistics compiles repository information, which can be displayed using Markdown:
 
 ```
-[![](https://tanjeffreyz-github-overview.fly.dev/repo?owner=tanjeffreyz&repo=github-statistics)](https://github.com/tanjeffreyz/github-statistics)
+[![](https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/output/repositories/tanjeffreyz/github-statistics.svg)](https://github.com/tanjeffreyz/github-statistics)
 ```
 
 <div align="center" width="100%">
