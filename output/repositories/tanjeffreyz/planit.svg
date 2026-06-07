@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="421px" height="140.33333333333334px" viewBox="0 0 421 140.33333333333334">
+        <style>
+            * {
+                font-family: "Trebuchet MS", sans-serif;
+            }
+            @keyframes repo-info-fade-in {
+                0% {
+                    opacity: 0%;
+                }
+                100% {
+                    opacity: 100%;
+                }
+            }
+            .repo-info-fade {
+                opacity: 0%;
+                animation: repo-info-fade-in 1.25s forwards ease-out;
+            }
+            .repo-info-background-fade {
+                opacity: 0%;
+                animation: repo-info-fade-in 1.25s forwards ease-in-out;
+            }
+        </style>
+        <defs>
+            <linearGradient id="repoInfoGradient" gradientTransform="rotate(90) translate(-1,0) scale(4,2)">
+                <stop offset="5%" stop-color="#c1b9e8" />
+                <stop offset="50%" stop-color="#f39189" />
+                <stop offset="100%" stop-color="#ff6f5d" />
+            </linearGradient>
+        </defs>
+    
+        <rect class="repo-info-background-fade" style="animation-delay: 0.75s" width="421px" height="140.33333333333334px" rx="15px" fill="url('#repoInfoGradient')" mask="url('#repoContents')" />
+        <mask id="repoContents">
+            <rect width="421px" height="140.33333333333334px" rx="15px" fill="white" />
+    
+        <g class="repo-info-fade" style="animation-delay: 1.25s">
+            
+        <svg fill="black" viewBox="0 0 24 24" width="36.48666666666667px" height="36.48666666666667px" x="8.0px" y="12.411666666666667px">
+            <path fill-rule="evenodd" d="M3 2.75A2.75 2.75 0 015.75 0h14.5a.75.75 0 01.75.75v20.5a.75.75              0 01-.75.75h-6a.75.75 0 010-1.5h5.25v-4H6A1.5 1.5 0 004.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75              0 01-.6 1.374A3.25 3.25 0 013 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25              1.25-1.25H19.5z">
+            </path>
+            <path d="M7 18.25a.25.25 0 01.25-.25h5a.25.25 0 01.25.25v5.01a.25.25 0 01-.397.201l-2.206-1.604a.25.25              0 00-.294 0L7.397 23.46a.25.25 0 01-.397-.2v-5.01z">
+            </path>
+        </svg>
+    
+            <text fill="black" x="52.90666666666667px" y="28.55px" width="396.0" height="21.05px" font-size="21.05px">
+                planit
+            </text>
+            <text fill="black" x="52.90666666666667px" y="43.98666666666667px" width="396.0" height="12.63px" font-size="12.63px">
+                tanjeffreyz
+            </text>
+        </g>
+    <g class="repo-info-fade" style="animation-delay: 1.75s">
+            <text fill="black" x="12.5px" y="67.84333333333333px" width="396.0" height="12.63px" font-size="12.63px">
+                Assignment tracker for students that automatically compiles due
+            </text>
+        
+            <text fill="black" x="12.5px" y="83.28px" width="396.0" height="12.63px" font-size="12.63px">
+                dates into an interactive calendar
+            </text>
+        </g><g class="repo-info-fade" style="animation-delay: 2.25s">
+            <text fill="black" x="28.638333333333335px" y="123.51833333333335px" width="58.7295px" height="12.63px" font-size="12.63px" dominant-baseline="middle">
+                JavaScript
+            </text>
+        
+            <text fill="black" x="116.13616666666667px" y="123.51833333333335px" width="39.0267px" height="12.63px" font-size="12.63px" dominant-baseline="middle">
+                Python
+            </text>
+        
+                <text fill="black" x="399.4324px" y="123.51833333333335px" width="6.5676px" height="15.436666666666667px" font-size="12.63px" dominant-baseline="middle">
+                    2
+                </text>
+            
+        <svg fill="black" viewBox="0 0 24 24" width="15.436666666666667px" height="15.436666666666667px" x="380.4874px" y="114.80000000000001px">
+            <path fill-rule="evenodd" d="M12 21a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zm-3.25-1.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5              0zm-3-12.75a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM2.5 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0zM18.25 6.5a1.75 1.75 0              110-3.5 1.75 1.75 0 010 3.5zM15 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0z" /><path fill-rule="evenodd" d="M6.5 7.75v1A2.25              2.25 0 008.75 11h6.5a2.25 2.25 0 002.25-2.25v-1H19v1a3.75 3.75 0 01-3.75 3.75h-6.5A3.75 3.75 0 015 8.75v-1h1.5z">
+            </path>
+            <path fill-rule="evenodd" d="M11.25 16.25v-5h1.5v5h-1.5z">
+            </path>
+        </svg>
+    
+                <text fill="black" x="354.7222px" y="123.51833333333335px" width="13.1352px" height="15.436666666666667px" font-size="12.63px" dominant-baseline="middle">
+                    13
+                </text>
+            
+        <svg fill="black" viewBox="0 0 24 24" width="15.436666666666667px" height="15.436666666666667px" x="335.7772px" y="114.80000000000001px">
+            <path fill-rule="evenodd" d="M12 .25a.75.75 0 01.673.418l3.058 6.197 6.839.994a.75.75 0 01.415 1.279l-4.948              4.823 1.168 6.811a.75.75 0 01-1.088.791L12 18.347l-6.117 3.216a.75.75 0 01-1.088-.79l1.168-6.812-4.948-4.823a.75.75              0 01.416-1.28l6.838-.993L11.328.668A.75.75 0 0112 .25zm0 2.445L9.44 7.882a.75.75 0 01-.565.41l-5.725.832 4.143              4.038a.75.75 0 01.215.664l-.978 5.702 5.121-2.692a.75.75 0 01.698 0l5.12 2.692-.977-5.702a.75.75 0 01.215-.664l4.143-4.038-5.725-.831a.75.75              0 01-.565-.41L12 2.694z">
+            </path>
+        </svg>
+    </g></mask><g class="repo-info-fade" style="animation-delay: 2.25s"><circle cx="18.815px" cy="122.51833333333335px" r="6.315px" fill="#f1e05a" opacity="65%" /><circle cx="106.31283333333333px" cy="122.51833333333335px" r="6.315px" fill="#3572A5" opacity="65%" /></g></svg>
