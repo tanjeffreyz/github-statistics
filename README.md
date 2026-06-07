@@ -5,9 +5,7 @@ displayed in a profile README:
 
 
 <div align="center" width="100%">
-  <a href="https://tanjeffreyz-github-overview.fly.dev/about">
-    <img src="https://tanjeffreyz-github-overview.fly.dev/overview?cacheAge=3" width="100%" />
-  </a>
+  <img src="https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/output/overview.svg" width="100%" />
 </div>
 
 
