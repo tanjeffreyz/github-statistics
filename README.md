@@ -24,7 +24,7 @@ In addition, GitHub Statistics compiles repository information, which can be dis
 
 <div align="center" width="100%">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/output/repositories/tanjeffreyz/github-statistics.svg" />
+    <img src="https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/output/repositories/tanjeffreyz/github-statistics-zero-delay.svg" />
   </a>
 </div>
 
