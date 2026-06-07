@@ -130,10 +130,10 @@
                 </mask>
             
         </defs>
-        <g class="fade-in" style="animation-delay: 2.0s">
+        <g class="fade-in" style="animation-delay: 2.25s">
             <rect width="896.0px" height="256px" rx="15px" fill="url('#sky-gradient')" />
         </g>
-        <g class="fade-in" style="animation-delay: 2.5s">
+        <g class="fade-in" style="animation-delay: 2.75s">
             <circle cx="50%" cy="50%" r="64.0px" fill="#fffab3" />
     <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#4bbad3" />
                 <rect x="384.3036335143952px" y="165.4px" width="129.4310535889131px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm0')" />
@@ -175,7 +175,7 @@
                 <rect class="wave1" style="animation-delay: 1.6523784728478381s" x="421.5465127417282px" y="213.253353186758px" width="51.70437660519749px" height="2.5px" rx="1.25px" ry="1.25px" opacity="40%" fill="#fffab3" mask="url('#rm18')" />
             <rect width="896.0px" height="40.32px" y="215.67999999999998px" rx="15px" ry="15px" fill="#a2dad7" /><rect class="wave2" style="animation-delay: 0.6666666666666666s" width="896.0px" height="26.879999999999995px" y="211.2px" fill="#a2dad7" />
         </g>
-        <g class="fade-in" style="animation-delay: 3.0s" fill="#3b1a06">
+        <g class="fade-in" style="animation-delay: 3.25s" fill="#3b1a06">
             <ellipse cx="50%" cy="100%" rx="16.5%" ry="19.2px" />
             
         <svg version="1.1" id="layer" width="270.08px" height="270.08px" x="412.16px" y="6.4px" viewBox="0 0 720 720">
