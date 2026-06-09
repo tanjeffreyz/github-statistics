@@ -6,7 +6,7 @@ displayed in a profile README:
 
 <div align="center" width="100%">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/assets/overview.svg" width="100%" />
+    <img src="https://github.com/tanjeffreyz/github-statistics/blob/main/output/overview.svg" width="100%" />
   </a>
 </div>
 
@@ -26,7 +26,7 @@ In addition, GitHub Statistics compiles repository information, which can be dis
 
 <div align="center" width="100%">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/tanjeffreyz/github-statistics/refs/heads/main/assets/github-statistics.svg" />
+    <img src="https://github.com/tanjeffreyz/github-statistics/blob/main/output/repositories/tanjeffreyz/github-statistics.svg" />
   </a>
 </div>
 
