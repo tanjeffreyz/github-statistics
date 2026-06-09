@@ -55,7 +55,7 @@ jobs:
         git config --global user.name 'github-statistics'
         git config --global user.email 'github-statistics@tanjeffreyz.github.io'
         git add * || true
-        git commit -m 'Updated outputs' || true
+        git commit -m 'Update outputs' || true
         git push
 
     - name: Checkout GitHub profile repository
