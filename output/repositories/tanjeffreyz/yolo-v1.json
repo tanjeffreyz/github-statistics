@@ -1,7 +1,7 @@
 {
   "name": "yolo-v1",
   "owner": "tanjeffreyz",
-  "description": "PyTorch implementation of the YOLOv1 architecture presented in \"You Only Look Once: Unified, Real-Time Object Detection\" by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
+  "description": "PyTorch implementation of YOLOv1 presented in \"You Only Look Once: Unified, Real-Time Object Detection\" by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi",
   "languages": [
     {
       "name": "Python",

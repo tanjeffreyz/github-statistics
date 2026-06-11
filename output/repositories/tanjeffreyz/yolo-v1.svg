@@ -51,15 +51,15 @@
         </g>
     <g class="repo-info-fade" style="animation-delay: 2.25s">
             <text fill="black" x="12.5px" y="67.84333333333333px" width="396.0" height="12.63px" font-size="12.63px">
-                PyTorch implementation of the YOLOv1 architecture presented in
+                PyTorch implementation of YOLOv1 presented in "You Only Look
             </text>
         
             <text fill="black" x="12.5px" y="83.28px" width="396.0" height="12.63px" font-size="12.63px">
-                "You Only Look Once: Unified, Real-Time Object Detection" by Joseph
+                Once: Unified, Real-Time Object Detection" by Joseph Redmon,
             </text>
         
             <text fill="black" x="12.5px" y="98.71666666666668px" width="396.0" height="12.63px" font-size="12.63px">
-                Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi
+                Santosh Divvala, Ross Girshick, Ali Farhadi
             </text>
         </g><g class="repo-info-fade" style="animation-delay: 2.75s">
             <text fill="black" x="28.638333333333335px" y="123.51833333333335px" width="39.0267px" height="12.63px" font-size="12.63px" dominant-baseline="middle">
