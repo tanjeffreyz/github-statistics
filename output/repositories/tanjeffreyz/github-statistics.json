@@ -1,7 +1,7 @@
 {
   "name": "github-statistics",
   "owner": "tanjeffreyz",
-  "description": "GitHub stat tracker that uses GraphQL to retrieve both public and private user statistics",
+  "description": "GitHub stat tracker that uses GraphQL to retrieve public and private user statistics",
   "languages": [
     {
       "name": "Java",

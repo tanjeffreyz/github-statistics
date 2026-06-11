@@ -51,11 +51,11 @@
         </g>
     <g class="repo-info-fade" style="animation-delay: 2.0s">
             <text fill="black" x="12.5px" y="67.84333333333333px" width="396.0" height="12.63px" font-size="12.63px">
-                GitHub stat tracker that uses GraphQL to retrieve both public and
+                GitHub stat tracker that uses GraphQL to retrieve public and private
             </text>
         
             <text fill="black" x="12.5px" y="83.28px" width="396.0" height="12.63px" font-size="12.63px">
-                private user statistics
+                user statistics
             </text>
         </g><g class="repo-info-fade" style="animation-delay: 2.5s">
             <text fill="black" x="28.638333333333335px" y="123.51833333333335px" width="25.6389px" height="12.63px" font-size="12.63px" dominant-baseline="middle">
