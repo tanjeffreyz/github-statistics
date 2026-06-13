@@ -43,7 +43,7 @@
         <defs>
             <linearGradient id="sky-gradient" gradientTransform="rotate(90)">
                 <stop offset="5%" stop-color="#ff6f5d" />
-                <stop offset="76.66666666666667%" stop-color="#fdb367" />
+                <stop offset="82.5%" stop-color="#fdb367" />
             </linearGradient>
             <linearGradient id="soft-ends">
                 <stop offset="0%" stop-color="black" />
