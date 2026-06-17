@@ -2,6 +2,7 @@
 target/
 *.iml
 github_overview/
+github_profile/
 
 # Compiled class file
 *.class
