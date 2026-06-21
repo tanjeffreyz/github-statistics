@@ -42,8 +42,12 @@
         </style>
         <defs>
             <linearGradient id="sky-gradient" gradientTransform="rotate(90)">
-                <stop offset="5%" stop-color="#ff6f5d" />
-                <stop offset="82.5%" stop-color="#fdb367" />
+                <stop offset="5%" stop-color="#fdb367" />
+                <stop offset="65.0%" stop-color="#ff6f5d" />
+            </linearGradient>
+            <linearGradient id="sun-gradient" gradientTransform="rotate(90)">
+                <stop offset="40%" stop-color="#fffab3" />
+                <stop offset="80%" stop-color="#ff6f5d" />
             </linearGradient>
             <linearGradient id="soft-ends">
                 <stop offset="0%" stop-color="black" />
@@ -134,7 +138,7 @@
             <rect width="896.0px" height="256px" rx="15px" fill="url('#sky-gradient')" />
         </g>
         <g class="fade-in" style="animation-delay: 2.75s">
-            <circle cx="50%" cy="50%" r="64.0px" fill="#fffab3" />
+            <circle cx="50%" cy="50%" r="64.0px" fill="url('#sun-gradient')" />
     <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#4bbad3" />
                 <rect x="384.3036335143952px" y="165.4px" width="129.4310535889131px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm0')" />
             

@@ -25,7 +25,7 @@
             <linearGradient id="repoInfoGradient" gradientTransform="rotate(90) translate(-0,0) scale(4,2)">
                 <stop offset="5%" stop-color="#c1b9e8" />
                 <stop offset="50%" stop-color="#f39189" />
-                <stop offset="100%" stop-color="#ff6f5d" />
+                <stop offset="100%" stop-color="#fdb367" />
             </linearGradient>
         </defs>
     
