@@ -42,7 +42,7 @@
         </style>
         <defs>
             <linearGradient id="sky-gradient" gradientTransform="rotate(90)">
-                <stop offset="5%" stop-color="#fdb367" />
+                <stop offset="0%" stop-color="#fdb367" />
                 <stop offset="65.0%" stop-color="#ff6f5d" />
             </linearGradient>
             <linearGradient id="sun-gradient" gradientTransform="rotate(90)">
