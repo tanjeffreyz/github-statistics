@@ -111,7 +111,7 @@
         <svg width="896.0px" height="256px">
             <defs>
                 <linearGradient id="overviewGradient" gradientTransform="rotate(90)">
-                    <stop offset="5%" stop-color="#7fbbff" />
+                    <stop offset="5%" stop-color="#8caed8" />
                     <stop offset="95%" stop-color="#c1b9e8" />
                 </linearGradient>
             </defs>
