@@ -1,9 +1,9 @@
-import concurrency.Job;
-import concurrency.RepositoryInfoJob;
-import concurrency.RepositoryStatsJob;
-import concurrency.UserStatsJob;
 import data.Catalog;
 import disk.FileManager;
+import job.Job;
+import job.RepositoryInfoJob;
+import job.RepositoryStatsJob;
+import job.UserStatsJob;
 import query.Query;
 import data.Statistics;
 import java.util.ArrayList;

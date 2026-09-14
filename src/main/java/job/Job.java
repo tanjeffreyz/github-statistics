@@ -1,4 +1,4 @@
-package concurrency;
+package job;
 
 import com.google.gson.JsonObject;
 import query.Query;
