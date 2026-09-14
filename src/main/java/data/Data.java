@@ -22,7 +22,8 @@ public abstract class Data {
 
     /**
      * Packages and returns the data as a map of file names to JSON objects.
-     * @return      Map of file paths to JSON objects
+     * 
+     * @return Map of file paths to JSON objects
      */
     protected abstract Map<String, JsonObject> getOutputs();
 
@@ -41,8 +42,9 @@ public abstract class Data {
 
     /**
      * Returns PATHS relative to this Data object's home directory.
-     * @param paths     Paths to join
-     * @return          A path relative to this Data's home directory
+     * 
+     * @param paths Paths to join
+     * @return A path relative to this Data's home directory
      */
     public Path getDataPath(String... paths) {
         return Paths.get(NAME, paths);

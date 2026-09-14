@@ -7,7 +7,6 @@ import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-
 /**
  * Manages loading and saving various files.
  */
@@ -16,8 +15,9 @@ public class FileManager {
 
     /**
      * Loads the given query file from "/resources".
-     * @param queryName     Name of the query to load
-     * @return              String contents of the query
+     * 
+     * @param queryName Name of the query to load
+     * @return String contents of the query
      */
     public String loadQuery(String queryName) {
         Path path = Paths.get(queryName + ".query");
@@ -39,8 +39,10 @@ public class FileManager {
 
     /**
      * Saves a JSON object to FILENAME.json in "/output".
-     * @param fileName      Name of file to save to, ".json" extension is automatically appended
-     * @param json          JSON object to save
+     * 
+     * @param fileName Name of file to save to, ".json" extension is automatically
+     *                 appended
+     * @param json     JSON object to save
      */
     public void saveOutput(String fileName, JsonObject json) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
@@ -73,7 +75,8 @@ public class FileManager {
 
     /**
      * Deletes the given output file as well as its parent directory if empty
-     * @param fileName      Path to file to delete
+     * 
+     * @param fileName Path to file to delete
      */
     public void deleteOutput(String fileName) {
         Path target = Paths.get(OUTPUT_DIR, fileName + ".json");
@@ -85,8 +88,9 @@ public class FileManager {
 
     /**
      * Returns the given path relative to the OUTPUT_DIR.
-     * @param paths     A path or list of names that make up a path.
-     * @return          The path relative to OUTPUT_DIR.
+     * 
+     * @param paths A path or list of names that make up a path.
+     * @return The path relative to OUTPUT_DIR.
      */
     public static Path getOutputPath(String... paths) {
         return Paths.get(OUTPUT_DIR, paths);

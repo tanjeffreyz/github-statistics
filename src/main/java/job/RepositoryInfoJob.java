@@ -14,13 +14,12 @@ import java.util.concurrent.ExecutionException;
 /**
  * Compiles various information about public owned and contributed repositories.
  */
-public class RepositoryInfoJob extends Job{
+public class RepositoryInfoJob extends Job {
     private final Catalog DATA;
     private final List<JsonObject> REPOS;
 
     private static final Set<String> IGNORED_LANGUAGES = Set.of(
-            "html", "css", "scss", "tex"
-    );
+            "html", "css", "scss", "tex");
     private static final int MIN_LANGUAGES = 2;
 
     private String ownedCursor;
@@ -117,7 +116,8 @@ public class RepositoryInfoJob extends Job{
             }
         }
 
-        // Replace old languages with filtered list (reverse again b/c elements were added in reverse order)
+        // Replace old languages with filtered list (reverse again b/c elements were
+        // added in reverse order)
         JsonArray newLanguages = new JsonArray();
         Collections.reverse(filtered);
         for (JsonElement node : filtered) {

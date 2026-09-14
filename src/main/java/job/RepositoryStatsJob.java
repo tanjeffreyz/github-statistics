@@ -8,9 +8,9 @@ import data.Statistics;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 
-
 /**
- * Compiles various public and private stats across all owned and contributed repositories.
+ * Compiles various public and private stats across all owned and contributed
+ * repositories.
  */
 public class RepositoryStatsJob extends Job {
     private final Statistics DATA;

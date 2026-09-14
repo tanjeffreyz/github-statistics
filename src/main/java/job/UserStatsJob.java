@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-
 /**
  * Compiles various user statistics not bound to any specific repository.
  */

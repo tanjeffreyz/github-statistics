@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-
 /**
  * A process that queries asynchronously but writes to Statistics synchronously
  */
@@ -41,14 +40,16 @@ public abstract class Job {
 
     /**
      * Main data processing function of the Job.
-     * @throws InterruptedException     Error when one of the queries is interrupted.
-     * @throws ExecutionException       Thrown if trying to get result of aborted query.
+     * 
+     * @throws InterruptedException Error when one of the queries is interrupted.
+     * @throws ExecutionException   Thrown if trying to get result of aborted query.
      */
     protected abstract void main() throws InterruptedException, ExecutionException;
 
     /**
      * Checks on whether the Job is ready to proceed.
-     * @return      True if job is ready to proceed, False otherwise.
+     * 
+     * @return True if job is ready to proceed, False otherwise.
      */
     public boolean ready() {
         for (CompletableFuture<JsonObject> res : RESPONSES.values()) {
@@ -68,7 +69,8 @@ public abstract class Job {
 
     /**
      * Checks whether the Job is ready to finish.
-     * @return      True if job is ready to finish, False otherwise
+     * 
+     * @return True if job is ready to finish, False otherwise
      */
     public boolean done() {
         return done;

@@ -5,7 +5,6 @@ import disk.FileManager;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-
 /**
  * Sends various asynchronous queries to GitHub's GraphQL API.
  */
@@ -21,9 +20,10 @@ public class Query {
 
     /**
      * Requests a page of repository stats such as stars and issues.
-     * @param ownedCursor           Cursor to start from for querying owned repos
-     * @param contributedCursor     Cursor to start from when querying contributed repos
-     * @return                      JSON response
+     * 
+     * @param ownedCursor       Cursor to start from for querying owned repos
+     * @param contributedCursor Cursor to start from when querying contributed repos
+     * @return JSON response
      */
     public CompletableFuture<JsonObject> repositoryStats(String ownedCursor, String contributedCursor) {
         String query = FILE_MANAGER.loadQuery("repository_stats")
@@ -34,9 +34,10 @@ public class Query {
 
     /**
      * Requests a page of repository information such as descriptions and languages.
-     * @param ownedCursor           Cursor to start from for querying owned repos
-     * @param contributedCursor     Cursor to start from when querying contributed repos
-     * @return                      JSON response
+     * 
+     * @param ownedCursor       Cursor to start from for querying owned repos
+     * @param contributedCursor Cursor to start from when querying contributed repos
+     * @return JSON response
      */
     public CompletableFuture<JsonObject> repositoryInfo(String ownedCursor, String contributedCursor) {
         String query = FILE_MANAGER.loadQuery("repository_info")
@@ -47,7 +48,8 @@ public class Query {
 
     /**
      * Requests a list of all the years the user has been contributing for.
-     * @return      JSON response
+     * 
+     * @return JSON response
      */
     public CompletableFuture<JsonObject> contributionYears() {
         return CLIENT.asyncRequest(TARGET, FILE_MANAGER.loadQuery("contribution_years"));
@@ -55,8 +57,9 @@ public class Query {
 
     /**
      * Requests total contributions for each year in YEARS.
-     * @param years     List of years to query
-     * @return          JSON response
+     * 
+     * @param years List of years to query
+     * @return JSON response
      */
     public CompletableFuture<JsonObject> totalContributions(List<Integer> years) {
         String template = FILE_MANAGER.loadQuery("contributions_per_year");

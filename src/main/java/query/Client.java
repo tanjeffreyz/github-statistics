@@ -8,7 +8,6 @@ import java.net.http.*;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
 
-
 /**
  * Sends asynchronous HTTP requests.
  */

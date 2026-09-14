@@ -38,8 +38,7 @@ public class Catalog extends Data {
                     for (File output : outputFiles) {
                         Path path = getDataPath(
                                 output.getParentFile().getName(),
-                                output.getName().replace(".json", "")
-                        );
+                                output.getName().replace(".json", ""));
                         allFiles.add(path.toString());
                     }
                 }
@@ -51,8 +50,7 @@ public class Catalog extends Data {
         for (JsonObject repo : REPOS) {
             Path path = getDataPath(
                     repo.get("owner").getAsString(),
-                    repo.get("name").getAsString()
-            );
+                    repo.get("name").getAsString());
             result.put(path.toString(), repo);
         }
 
