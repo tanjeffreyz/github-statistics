@@ -42,11 +42,11 @@
         </style>
         <defs>
             <linearGradient id="sky-gradient" gradientTransform="rotate(90)">
-                <stop offset="0%" stop-color="#fdb367" />
+                <stop offset="0%" stop-color="#fda966" />
                 <stop offset="65.0%" stop-color="#ff6f5d" />
             </linearGradient>
             <linearGradient id="sun-gradient" gradientTransform="rotate(90)">
-                <stop offset="40%" stop-color="#fffab3" />
+                <stop offset="40%" stop-color="#ffecaa" />
                 <stop offset="80%" stop-color="#ff6f5d" />
             </linearGradient>
             <linearGradient id="soft-ends">
@@ -152,50 +152,50 @@
         </g>
         <g class="fade-in" style="animation-delay: 2.75s">
             <circle cx="50%" cy="50%" r="64.0px" fill="url('#sun-gradient')" />
-    <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#dcb1ac" />
-                <rect x="387.5791603088517px" y="165.4px" width="122.88px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm0')" />
+    <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#e5a098" />
+                <rect x="387.5791603088517px" y="165.4px" width="122.88px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm0')" />
             
-                <rect x="384.4980140324752px" y="166.81px" width="127.00651153413513px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm1')" />
+                <rect x="384.4980140324752px" y="166.81px" width="127.00651153413513px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm1')" />
             
-                <rect x="383.73782776836185px" y="168.32434px" width="131.01077197531362px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm2')" />
+                <rect x="383.73782776836185px" y="168.32434px" width="131.01077197531362px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm2')" />
             
-                <rect x="380.85600165625596px" y="169.95074116px" width="134.86194961787632px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm3')" />
+                <rect x="380.85600165625596px" y="169.95074116px" width="134.86194961787632px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm3')" />
             
-                <rect x="380.443237026399px" y="171.69749600584px" width="138.52287248724812px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm4')" />
+                <rect x="380.443237026399px" y="171.69749600584px" width="138.52287248724812px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm4')" />
             
-                <rect x="378.74985140635914px" y="173.57351071027216px" width="141.9488112488715px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm5')" />
+                <rect x="378.74985140635914px" y="173.57351071027216px" width="141.9488112488715px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm5')" />
             
-                <rect x="375.8977211800974px" y="175.58835050283233px" width="145.0859219211365px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm6')" />
+                <rect x="375.8977211800974px" y="175.58835050283233px" width="145.0859219211365px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm6')" />
             
-                <rect x="371.8329340097267px" y="177.7522884400419px" width="147.86922792769298px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm7')" />
+                <rect x="371.8329340097267px" y="177.7522884400419px" width="147.86922792769298px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm7')" />
             
-                <rect x="371.84717315396665px" y="180.07635778460502px" width="150.2199622294371px" height="2px" rx="1.0px" ry="1.0px" opacity="40%" fill="#fffab3" mask="url('#rm8')" />
-            <rect class="wave1" style="animation-delay: 0s" width="896.0px" height="44.8px" y="181.33333333333331px" fill="#bca9bc" />
-                <rect class="wave1" style="animation-delay: 0.0s" x="372.4187171375366px" y="181.15px" width="151.27499008097803px" height="2.5px" rx="1.25px" ry="1.25px" opacity="40.0%" fill="#fffab3" mask="url('#rm9')" />
+                <rect x="371.84717315396665px" y="180.07635778460502px" width="150.2199622294371px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm8')" />
+            <rect class="wave1" style="animation-delay: 0s" width="896.0px" height="44.8px" y="181.33333333333331px" fill="#cd9aa4" />
+                <rect class="wave1" style="animation-delay: 0.0s" x="372.4187171375366px" y="181.15px" width="151.27499008097803px" height="2.5px" rx="1.25px" ry="1.25px" opacity="33.0%" fill="#ffecaa" mask="url('#rm9')" />
             
-                <rect class="wave1" style="animation-delay: 0.1351102941176467s" x="373.8223830130938px" y="183.775px" width="152.77774581397645px" height="2.5px" rx="1.25px" ry="1.25px" opacity="36.91176470588236%" fill="#fffab3" mask="url('#rm10')" />
+                <rect class="wave1" style="animation-delay: 0.1351102941176467s" x="373.8223830130938px" y="183.775px" width="152.77774581397645px" height="2.5px" rx="1.25px" ry="1.25px" opacity="30.452205882352946%" fill="#ffecaa" mask="url('#rm10')" />
             
-                <rect class="wave1" style="animation-delay: 0.2803538602941172s" x="369.22498497466376px" y="186.596875px" width="153.53941791943853px" height="2.5px" rx="1.25px" ry="1.25px" opacity="33.59191176470589%" fill="#fffab3" mask="url('#rm11')" />
+                <rect class="wave1" style="animation-delay: 0.2803538602941172s" x="369.22498497466376px" y="186.596875px" width="153.53941791943853px" height="2.5px" rx="1.25px" ry="1.25px" opacity="27.71332720588236%" fill="#ffecaa" mask="url('#rm11')" />
             
-                <rect class="wave1" style="animation-delay: 0.4364906939338227s" x="372.532365685787px" y="189.630390625px" width="153.3856598498621px" height="2.5px" rx="1.25px" ry="1.25px" opacity="30.023069852941195%" fill="#fffab3" mask="url('#rm12')" />
+                <rect class="wave1" style="animation-delay: 0.4364906939338227s" x="372.532365685787px" y="189.630390625px" width="153.3856598498621px" height="2.5px" rx="1.25px" ry="1.25px" opacity="24.769032628676488%" fill="#ffecaa" mask="url('#rm12')" />
             
-                <rect class="wave1" style="animation-delay: 0.6043377900965062s" x="373.64411874313686px" y="192.89141992187498px" width="152.09223590325465px" height="2.5px" rx="1.25px" ry="1.25px" opacity="26.18656479779414%" fill="#fffab3" mask="url('#rm13')" />
+                <rect class="wave1" style="animation-delay: 0.6043377900965062s" x="373.64411874313686px" y="192.89141992187498px" width="152.09223590325465px" height="2.5px" rx="1.25px" ry="1.25px" opacity="21.603915958180167%" fill="#ffecaa" mask="url('#rm13')" />
             
-                <rect class="wave1" style="animation-delay: 0.7847734184713913s" x="371.1980278629132px" y="196.3970264160156px" width="149.3630720751166px" height="2.5px" rx="1.25px" ry="1.25px" opacity="22.062321863511055%" fill="#fffab3" mask="url('#rm14')" />
+                <rect class="wave1" style="animation-delay: 0.7847734184713913s" x="371.1980278629132px" y="196.3970264160156px" width="149.3630720751166px" height="2.5px" rx="1.25px" ry="1.25px" opacity="18.20141553739662%" fill="#ffecaa" mask="url('#rm14')" />
             
-                <rect class="wave1" style="animation-delay: 0.9787417189743922s" x="373.43192957293263px" y="200.16555339721677px" width="144.7929292950401px" height="2.5px" rx="1.25px" ry="1.25px" opacity="17.62876070915675%" fill="#fffab3" mask="url('#rm15')" />
+                <rect class="wave1" style="animation-delay: 0.9787417189743922s" x="373.43192957293263px" y="200.16555339721677px" width="144.7929292950401px" height="2.5px" rx="1.25px" ry="1.25px" opacity="14.543727585054318%" fill="#ffecaa" mask="url('#rm15')" />
             
-                <rect class="wave1" style="animation-delay: 1.1872576420151186s" x="377.6443778624059px" y="204.21671990200804px" width="137.79821809666294px" height="2.5px" rx="1.25px" ry="1.25px" opacity="12.862682468225861%" fill="#fffab3" mask="url('#rm16')" />
+                <rect class="wave1" style="animation-delay: 1.1872576420151186s" x="377.6443778624059px" y="204.21671990200804px" width="137.79821809666294px" height="2.5px" rx="1.25px" ry="1.25px" opacity="10.611713036286336%" fill="#ffecaa" mask="url('#rm16')" />
             
-                <rect class="wave1" style="animation-delay: 1.4114122592838991s" x="383.80138676380864px" y="208.57172389465862px" width="127.47259181029973px" height="2.5px" rx="1.25px" ry="1.25px" opacity="7.739148359225162%" fill="#fffab3" mask="url('#rm17')" />
+                <rect class="wave1" style="animation-delay: 1.4114122592838991s" x="383.80138676380864px" y="208.57172389465862px" width="127.47259181029973px" height="2.5px" rx="1.25px" ry="1.25px" opacity="6.384797396360758%" fill="#ffecaa" mask="url('#rm17')" />
             
-                <rect class="wave1" style="animation-delay: 1.6523784728478381s" x="391.28505928025425px" y="213.253353186758px" width="112.22728352814529px" height="2.5px" rx="1.25px" ry="1.25px" opacity="2.231349192049412%" fill="#fffab3" mask="url('#rm18')" />
-            <rect width="896.0px" height="40.32px" y="215.67999999999998px" rx="15px" ry="15px" fill="#9da1ce" /><rect class="wave2" style="animation-delay: 0.6666666666666666s" width="896.0px" height="26.879999999999995px" y="211.2px" fill="#9da1ce" />
-                <rect class="wave2" style="animation-delay: 0.6666666666666666s" x="382.80047162432044px" y="211.15px" width="130.5348995479753px" height="2.5px" rx="1.25px" ry="1.25px" opacity="15.0%" fill="#fffab3" mask="url('#rm19')" />
+                <rect class="wave1" style="animation-delay: 1.6523784728478381s" x="391.28505928025425px" y="213.253353186758px" width="112.22728352814529px" height="2.5px" rx="1.25px" ry="1.25px" opacity="1.840863083440765%" fill="#ffecaa" mask="url('#rm18')" />
+            <rect width="896.0px" height="40.32px" y="215.67999999999998px" rx="15px" ry="15px" fill="#b694b2" /><rect class="wave2" style="animation-delay: 0.6666666666666666s" width="896.0px" height="26.879999999999995px" y="211.2px" fill="#b694b2" />
+                <rect class="wave2" style="animation-delay: 0.6666666666666666s" x="382.80047162432044px" y="211.15px" width="130.5348995479753px" height="2.5px" rx="1.25px" ry="1.25px" opacity="15.0%" fill="#ffecaa" mask="url('#rm19')" />
             
-                <rect class="wave2" style="animation-delay: 0.8219791666666665s" x="394.5026379509457px" y="214.7px" width="107.65979483539806px" height="2.5px" rx="1.25px" ry="1.25px" opacity="9.675000000000004%" fill="#fffab3" mask="url('#rm20')" />
+                <rect class="wave2" style="animation-delay: 0.8219791666666665s" x="394.5026379509457px" y="214.7px" width="107.65979483539806px" height="2.5px" rx="1.25px" ry="1.25px" opacity="9.675000000000004%" fill="#ffecaa" mask="url('#rm20')" />
             
-                <rect class="wave2" style="animation-delay: 0.9850572916666668s" x="411.6286602301959px" y="218.4275px" width="71.82166458221359px" height="2.5px" rx="1.25px" ry="1.25px" opacity="4.083749999999995%" fill="#fffab3" mask="url('#rm21')" />
+                <rect class="wave2" style="animation-delay: 0.9850572916666668s" x="411.6286602301959px" y="218.4275px" width="71.82166458221359px" height="2.5px" rx="1.25px" ry="1.25px" opacity="4.083749999999995%" fill="#ffecaa" mask="url('#rm21')" />
             
         </g>
         <g class="fade-in" style="animation-delay: 3.25s" fill="#3b1a06">
