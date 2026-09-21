@@ -111,8 +111,8 @@
         <svg width="896.0px" height="256px">
             <defs>
                 <linearGradient id="overviewGradient" gradientTransform="rotate(90)">
-                    <stop offset="0%" stop-color="#b694b2" />
-                    <stop offset="100%" stop-color="#d5a1bb" />
+                    <stop offset="0%" stop-color="#a79cc3" />
+                    <stop offset="100%" stop-color="#cdabce" />
                 </linearGradient>
             </defs>
             <rect class="overview-background" width="896.0px" height="256px" rx="15px" fill="url('#overviewGradient')" mask="url('#overviewContents')" />

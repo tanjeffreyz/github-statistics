@@ -152,7 +152,7 @@
         </g>
         <g class="fade-in" style="animation-delay: 2.75s">
             <circle cx="50%" cy="50%" r="64.0px" fill="url('#sun-gradient')" />
-    <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#e5a098" />
+    <rect width="896.0px" height="53.75999999999999px" y="166.4px" fill="#e0aaa4" />
                 <rect x="387.5791603088517px" y="165.4px" width="122.88px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm0')" />
             
                 <rect x="384.4980140324752px" y="166.81px" width="127.00651153413513px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm1')" />
@@ -170,7 +170,7 @@
                 <rect x="371.8329340097267px" y="177.7522884400419px" width="147.86922792769298px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm7')" />
             
                 <rect x="371.84717315396665px" y="180.07635778460502px" width="150.2199622294371px" height="2px" rx="1.0px" ry="1.0px" opacity="33%" fill="#ffecaa" mask="url('#rm8')" />
-            <rect class="wave1" style="animation-delay: 0s" width="896.0px" height="44.8px" y="181.33333333333331px" fill="#cd9aa4" />
+            <rect class="wave1" style="animation-delay: 0s" width="896.0px" height="44.8px" y="181.33333333333331px" fill="#c3a3b3" />
                 <rect class="wave1" style="animation-delay: 0.0s" x="372.4187171375366px" y="181.15px" width="151.27499008097803px" height="2.5px" rx="1.25px" ry="1.25px" opacity="33.0%" fill="#ffecaa" mask="url('#rm9')" />
             
                 <rect class="wave1" style="animation-delay: 0.1351102941176467s" x="373.8223830130938px" y="183.775px" width="152.77774581397645px" height="2.5px" rx="1.25px" ry="1.25px" opacity="30.452205882352946%" fill="#ffecaa" mask="url('#rm10')" />
@@ -190,7 +190,7 @@
                 <rect class="wave1" style="animation-delay: 1.4114122592838991s" x="383.80138676380864px" y="208.57172389465862px" width="127.47259181029973px" height="2.5px" rx="1.25px" ry="1.25px" opacity="6.384797396360758%" fill="#ffecaa" mask="url('#rm17')" />
             
                 <rect class="wave1" style="animation-delay: 1.6523784728478381s" x="391.28505928025425px" y="213.253353186758px" width="112.22728352814529px" height="2.5px" rx="1.25px" ry="1.25px" opacity="1.840863083440765%" fill="#ffecaa" mask="url('#rm18')" />
-            <rect width="896.0px" height="40.32px" y="215.67999999999998px" rx="15px" ry="15px" fill="#b694b2" /><rect class="wave2" style="animation-delay: 0.6666666666666666s" width="896.0px" height="26.879999999999995px" y="211.2px" fill="#b694b2" />
+            <rect width="896.0px" height="40.32px" y="215.67999999999998px" rx="15px" ry="15px" fill="#a79cc3" /><rect class="wave2" style="animation-delay: 0.6666666666666666s" width="896.0px" height="26.879999999999995px" y="211.2px" fill="#a79cc3" />
                 <rect class="wave2" style="animation-delay: 0.6666666666666666s" x="382.80047162432044px" y="211.15px" width="130.5348995479753px" height="2.5px" rx="1.25px" ry="1.25px" opacity="15.0%" fill="#ffecaa" mask="url('#rm19')" />
             
                 <rect class="wave2" style="animation-delay: 0.8219791666666665s" x="394.5026379509457px" y="214.7px" width="107.65979483539806px" height="2.5px" rx="1.25px" ry="1.25px" opacity="9.675000000000004%" fill="#ffecaa" mask="url('#rm20')" />
