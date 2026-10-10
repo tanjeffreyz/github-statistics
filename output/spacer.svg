@@ -1,2 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9" />
+<svg xmlns="http://www.w3.org/2000/svg" width="8px" height="8px" viewBox="0 0 8 8">
+          <defs>
+            <clipPath id="_widget-border-clip">
+              <rect width="8" height="8" rx="15" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#_widget-border-clip)">
+            
+          </g>
+        </svg>
