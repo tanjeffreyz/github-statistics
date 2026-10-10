@@ -47,6 +47,7 @@ jobs:
 
     - name: Install Python dependencies
       run: |
+        cd github_overview
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
 
