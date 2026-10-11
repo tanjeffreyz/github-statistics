@@ -35,7 +35,7 @@
 
     <radialGradient id="earth-atmospheric-glow" gradientUnits="userSpaceOnUse" cx="384.0" cy="128.0" r="83.2">
       <stop offset="0" stop-color="#8fd8ff" stop-opacity="0" />
-      <stop offset="0.5769" stop-color="#8fd8ff" stop-opacity="0.25" />
+      <stop offset="0.6154" stop-color="#8fd8ff" stop-opacity="0.25" />
       <stop offset="0.7308" stop-color="#8fd8ff" stop-opacity="0.75" />
       <stop offset="0.7692" stop-color="#aee4ff" stop-opacity="0.9" />
       <stop offset="0.8038" stop-color="#8fd8ff" stop-opacity="0.5" />
