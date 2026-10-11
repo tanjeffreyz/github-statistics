@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="768px" height="256px" viewBox="0 0 768 256">
           
+          <style>
+            * {
+              font-family: "Trebuchet MS", sans-serif;
+            }
+          </style>
           <defs>
             <clipPath id="_widget-border-clip">
               <rect width="768" height="256" rx="15" />
