@@ -12,7 +12,7 @@
             </clipPath>
           </defs>
           <g clip-path="url(#_widget-border-clip)">
-            <rect width="768" height="256" fill="#000000" />
+            <rect width="768" height="256" fill="#151515" />
 
   <defs>
     <filter id="earth-spherical-warp" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
