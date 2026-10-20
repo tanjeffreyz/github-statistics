@@ -24,13 +24,13 @@
                 }
                 .fade-in {
                     opacity: 0%;
-                    animation: fade-in-animation 0.5s forwards ease-in-out;
+                    animation: fade-in-animation forwards ease-in-out;
                 }
             </style>
-            <rect class="fade-in" width="384" height="128" fill="#151515" style="animation-delay: 1.5s" />
+            <rect class="fade-in" width="384" height="128" fill="#151515" style="animation-delay: 1.5s; animation-duration: 0.5s" />
             
 
-        <g class="fade-in" style="animation-delay: 2.0s">
+        <g class="fade-in" style="animation-delay: 2.0s; animation-duration: 1.25s">
           
         <svg width="33.28px" height="33.28px" viewBox="0 0 24 24" x="8.0" y="12.619999999999996" fill="#f0f0f0">
           <path fill-rule="evenodd" d="M3 2.75A2.75 2.75 0 015.75 0h14.5a.75.75 0 01.75.75v20.5a.75.75          0 01-.75.75h-6a.75.75 0 010-1.5h5.25v-4H6A1.5 1.5 0 004.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75          0 01-.6 1.374A3.25 3.25 0 013 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25          1.25-1.25H19.5z">
@@ -46,7 +46,7 @@
             tanjeffreyz
           </text>
         </g>
-<g class="fade-in" style="animation-delay: 2.25s">
+<g class="fade-in" style="animation-delay: 2.25s; animation-duration: 1.25s">
 
                 <text fill="#f0f0f0" x="12.5px" y="65.1px" width="359.0" height="11.52px" font-size="11.52px">
                     PyTorch implementation of "Attention Is All You Need" by Ashish
@@ -60,7 +60,7 @@
                     Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
                 </text>
 </g>
-<g class="fade-in" style="animation-delay: 2.5s">
+<g class="fade-in" style="animation-delay: 2.5s; animation-duration: 1.25s">
 
                 <circle cx="18.259999999999998px" cy="110.25px" r="5.76px" fill="#3572A5" opacity="65%" />
                 <text fill="#f0f0f0" x="27.22px" y="111.25px" width="35.5968px" height="11.52px" font-size="11.52px" dominant-baseline="middle">
