@@ -27,9 +27,9 @@
                     animation: fade-in-animation forwards ease-in-out;
                 }
             </style>
-            <rect class="fade-in" width="768" height="256" fill="#151515" style="animation-delay: 2.25s; animation-duration: 0.5s" />
+            <rect class="fade-in" width="768" height="256" fill="#151515" style="animation-delay: 2.25s; animation-duration: 0.75s" />
             
-<g class="fade-in" style="animation-delay: 3.25s; animation-duration: 1.25s">
+<g class="fade-in" style="animation-delay: 3.5s; animation-duration: 1.25s">
 
   <defs>
     <filter id="earth-spherical-warp" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
@@ -80,7 +80,7 @@
   <circle cx="384.0" cy="128.0" r="83.2" fill="url(#earth-atmospheric-glow)" />
 
 </g>
-<g class="fade-in" style="animation-delay: 2.75s; animation-duration: 1.25s">
+<g class="fade-in" style="animation-delay: 3.0s; animation-duration: 1.25s">
 
     <defs>
       <filter id="foreground-brightness-filter">
