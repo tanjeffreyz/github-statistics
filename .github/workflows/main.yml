@@ -79,6 +79,7 @@ jobs:
     - name: Run GitHub Overview script
       run: |
         cd github_overview
+        source venv/bin/activate
         python main.py
         
     - name: Commit new outputs
