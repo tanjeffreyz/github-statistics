@@ -8,7 +8,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 /**
- * A process that queries asynchronously but writes to Statistics synchronously
+ * A process that queries the GitHub API asynchronously but writes to Statistics synchronously
  */
 public abstract class Job {
     protected final Map<String, CompletableFuture<JsonObject>> RESPONSES;
