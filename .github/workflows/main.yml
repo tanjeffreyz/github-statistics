@@ -25,6 +25,7 @@ jobs:
         cache: maven
 
     - name: Cache Maven target
+      id: cache-maven-target
       uses: actions/cache@v4
       with:
         path: target
@@ -33,6 +34,7 @@ jobs:
           ${{ runner.os }}-maven-target-
         
     - name: Build with Maven
+      if: steps.cache-maven-target.outputs.cache-hit != 'true'
       run: mvn --batch-mode verify
 
     - name: Compile statistics
