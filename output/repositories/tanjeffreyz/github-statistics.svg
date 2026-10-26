@@ -27,7 +27,7 @@
                     animation: fade-in-animation forwards ease-in-out;
                 }
             </style>
-            <rect class="fade-in" width="384" height="128" fill="#151515" style="animation-delay: 1.0s; animation-duration: 0.75s" />
+            <rect class="fade-in" width="384" height="128" fill="#000000" style="animation-delay: 1.0s; animation-duration: 0.75s" />
             
 
         <g class="fade-in" style="animation-delay: 1.75s; animation-duration: 1.25s">
