@@ -28,9 +28,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: target
-          key: cache-maven-target-${{ runner.os }}-${{ hashFiles('**/pom.xml', 'src/**') }}
+          key: cache-maven-target-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('**/pom.xml', 'src/**') }}
           restore-keys: |
-            cache-maven-target-${{ runner.os }}-
+            cache-maven-target-${{ runner.os }}-${{ runner.arch }}-
 
       - name: Build with Maven
         if: steps.cache-maven-target.outputs.cache-hit != 'true'
@@ -62,9 +62,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: github_overview/venv
-          key: cache-python-venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('github_overview/requirements.txt') }}
+          key: cache-python-venv-${{ runner.os }}-${{ runner.arch }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('github_overview/requirements.txt') }}
           restore-keys: |
-            cache-python-venv-${{ runner.os }}-
+            cache-python-venv-${{ runner.os }}-${{ runner.arch }}-
 
       - name: Install Python dependencies
         if: steps.cache-python-venv.outputs.cache-hit != 'true'
