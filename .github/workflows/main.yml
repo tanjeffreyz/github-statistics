@@ -52,33 +52,21 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Set up Python
-        id: setup-python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Cache Python virtual environment
-        id: cache-python-venv
-        uses: actions/cache@v4
-        with:
-          path: github_overview/venv
-          key: cache-python-venv-${{ runner.os }}-${{ runner.arch }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('github_overview/requirements.txt') }}
-          restore-keys: |
-            cache-python-venv-${{ runner.os }}-${{ runner.arch }}-
+          cache: pip
+          cache-dependency-path: github_overview/requirements.txt
 
       - name: Install Python dependencies
-        if: steps.cache-python-venv.outputs.cache-hit != 'true'
         run: |
           cd github_overview
-          python -m venv venv
-          source venv/bin/activate
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
       - name: Run GitHub Overview script
         run: |
           cd github_overview
-          source venv/bin/activate
           python main.py
 
       - name: Commit new outputs
