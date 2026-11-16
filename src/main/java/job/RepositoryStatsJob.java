@@ -68,6 +68,7 @@ public class RepositoryStatsJob extends Job {
 
         JsonArray nodes = owned.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
+            if (r == null || r.isJsonNull()) continue;
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
             if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
@@ -91,6 +92,7 @@ public class RepositoryStatsJob extends Job {
 
         nodes = contrib.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
+            if (r == null || r.isJsonNull()) continue;
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
             if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
