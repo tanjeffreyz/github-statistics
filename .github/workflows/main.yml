@@ -42,22 +42,14 @@ jobs:
           java -cp target/gs-1.0-jar-with-dependencies.jar Main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.READ_ACCESS_TOKEN }}
-
-      - name: Commit new outputs
-        run: |
-          git config --global user.name 'github-statistics'
-          git config --global user.email 'github-statistics@tanjeffreyz.github.io'
-          git add * || true
-          git commit -m 'Update outputs' || true
-          git push
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Checkout GitHub Overview repository
         uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/github-overview
           path: github_overview
-          token: ${{ secrets.WRITE_ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -77,12 +69,20 @@ jobs:
           cd github_overview
           python main.py
 
+      - name: Commit new outputs
+        run: |
+          git config --global user.name 'github-statistics'
+          git config --global user.email 'github-statistics@tanjeffreyz.github.io'
+          git add * || true
+          git commit -m 'Update outputs' || true
+          git push
+
       - name: Checkout GitHub profile repository
         uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/${{ github.repository_owner }}
           path: github_profile
-          token: ${{ secrets.WRITE_ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Update GitHub profile
         run: |

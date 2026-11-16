@@ -1,0 +1,13 @@
+{
+  "name": "github-statistics",
+  "owner": "tanjeffreyz",
+  "description": "GitHub stat tracker that uses GraphQL to retrieve public and private user statistics",
+  "languages": [
+    {
+      "name": "Java",
+      "color": "#b07219"
+    }
+  ],
+  "stars": 13,
+  "forks": 0
+}

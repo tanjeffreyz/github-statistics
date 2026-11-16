@@ -1,0 +1,17 @@
+{
+  "name": "Animarble",
+  "owner": "Marble-Rundown",
+  "description": "Custom motion-capture software using OpenCV and dlib to control Arduino animatronics with human face movement.",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    {
+      "name": "GLSL",
+      "color": "#5686a5"
+    }
+  ],
+  "stars": 3,
+  "forks": 1
+}

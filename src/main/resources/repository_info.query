@@ -18,7 +18,9 @@
           login
         }
         description
-        stargazerCount
+        stargazers {
+          totalCount
+        }
         forkCount
         languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
           nodes {
@@ -46,7 +48,9 @@
           login
         }
         description
-        stargazerCount
+        stargazers {
+          totalCount
+        }
         forkCount
         languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
           nodes {

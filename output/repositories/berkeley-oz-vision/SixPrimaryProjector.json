@@ -1,0 +1,17 @@
+{
+  "name": "SixPrimaryProjector",
+  "owner": "berkeley-oz-vision",
+  "description": "Code to Communicate With and Calibrate a Six Primary Projector",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    },
+    {
+      "name": "Shell",
+      "color": "#89e051"
+    }
+  ],
+  "stars": 1,
+  "forks": 0
+}

@@ -1,0 +1,13 @@
+{
+  "name": "neighborhood-mia",
+  "owner": "tanjeffreyz",
+  "description": "Implementation of \"Membership Inference Attacks against Language Models via Neighbourhood Comparison\" by Justus Mattern, Fatemehsadat Mireshghallah, Zhijing Jin, Bernhard Schölkopf, Mrinmaya Sachan, Taylor Berg-Kirkpatrick",
+  "languages": [
+    {
+      "name": "Python",
+      "color": "#3572A5"
+    }
+  ],
+  "stars": 0,
+  "forks": 0
+}
