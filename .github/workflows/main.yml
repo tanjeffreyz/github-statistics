@@ -44,6 +44,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
+      - name: Commit new outputs
+        run: |
+          git config --global user.name 'github-statistics'
+          git config --global user.email 'github-statistics@tanjeffreyz.github.io'
+          git add * || true
+          git commit -m 'Update outputs' || true
+          git push
+
       - name: Checkout GitHub Overview repository
         uses: actions/checkout@v6
         with:
@@ -68,14 +76,6 @@ jobs:
         run: |
           cd github_overview
           python main.py
-
-      - name: Commit new outputs
-        run: |
-          git config --global user.name 'github-statistics'
-          git config --global user.email 'github-statistics@tanjeffreyz.github.io'
-          git add * || true
-          git commit -m 'Update outputs' || true
-          git push
 
       - name: Checkout GitHub profile repository
         uses: actions/checkout@v6
