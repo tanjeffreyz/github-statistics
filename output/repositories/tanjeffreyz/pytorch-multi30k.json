@@ -1,8 +1,0 @@
-{
-  "name": "pytorch-multi30k",
-  "owner": "tanjeffreyz",
-  "description": "Patch for PyTorch\u0027s Multi30k machine translation dataset (WMT16)",
-  "languages": [],
-  "stars": 1,
-  "forks": 0
-}
