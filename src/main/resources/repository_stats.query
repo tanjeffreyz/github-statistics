@@ -14,9 +14,7 @@
       totalCount
       nodes {
         nameWithOwner
-        stargazers {
-          totalCount
-        }
+        stargazerCount
         issues(states: CLOSED) {
           totalCount
         }
@@ -37,9 +35,7 @@
       totalCount
       nodes {
         nameWithOwner
-        stargazers {
-          totalCount
-        }
+        stargazerCount
         forkCount
       }
     }

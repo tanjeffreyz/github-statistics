@@ -72,8 +72,7 @@ public class RepositoryStatsJob extends Job {
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
             if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
-                stars += repo.get("stargazers").getAsJsonObject()
-                        .get("totalCount").getAsInt();
+                stars += repo.get("stargazerCount").getAsInt();
                 closedIssues += repo.get("issues").getAsJsonObject()
                         .get("totalCount").getAsInt();
                 numRepos++;
@@ -96,8 +95,7 @@ public class RepositoryStatsJob extends Job {
             JsonObject repo = r.getAsJsonObject();
             String name = repo.get("nameWithOwner").getAsString();
             if (!REPOS.contains(name) && !IGNORED_REPOS.contains(name)) {
-                stars += repo.get("stargazers").getAsJsonObject()
-                        .get("totalCount").getAsInt();
+                stars += repo.get("stargazerCount").getAsInt();
                 numRepos++;
                 REPOS.add(name);
                 CONTRIB_REPOS.add(name);

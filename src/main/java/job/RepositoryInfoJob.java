@@ -84,13 +84,12 @@ public class RepositoryInfoJob extends Job {
         for (JsonObject repo : REPOS) {
             String owner = repo.get("owner").getAsJsonObject()
                     .get("login").getAsString();
-            int stars = repo.get("stargazers").getAsJsonObject()
-                    .get("totalCount").getAsInt();
+            int stars = repo.get("stargazerCount").getAsInt();
             int forks = repo.get("forkCount").getAsInt();
             JsonArray languages = repo.get("languages").getAsJsonObject()
                     .get("nodes").getAsJsonArray();
             repo.addProperty("owner", owner);
-            repo.remove("stargazers");
+            repo.remove("stargazerCount");
             repo.addProperty("stars", stars);
             repo.remove("forkCount");
             repo.addProperty("forks", forks);
