@@ -51,6 +51,7 @@ public class RepositoryInfoJob extends Job {
 
         JsonArray nodes = owned.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
+            if (r == null || r.isJsonNull()) continue;
             JsonObject repo = r.getAsJsonObject();
             filterLanguages(repo);
             REPOS.add(repo);
@@ -63,6 +64,7 @@ public class RepositoryInfoJob extends Job {
 
         nodes = contrib.get("nodes").getAsJsonArray();
         for (JsonElement r : nodes) {
+            if (r == null || r.isJsonNull()) continue;
             JsonObject repo = r.getAsJsonObject();
             filterLanguages(repo);
             REPOS.add(repo);
