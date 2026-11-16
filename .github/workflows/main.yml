@@ -42,14 +42,14 @@ jobs:
           java -cp target/gs-1.0-jar-with-dependencies.jar Main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.METADATA_ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.READ_ACCESS_TOKEN }}
 
       - name: Checkout GitHub Overview repository
         uses: actions/checkout@v6
         with:
           repository: ${{ github.repository_owner }}/github-overview
           path: github_overview
-          token: ${{ secrets.CONTENT_ACCESS_TOKEN }}
+          token: ${{ secrets.WRITE_ACCESS_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -82,7 +82,7 @@ jobs:
         with:
           repository: ${{ github.repository_owner }}/${{ github.repository_owner }}
           path: github_profile
-          token: ${{ secrets.CONTENT_ACCESS_TOKEN }}
+          token: ${{ secrets.WRITE_ACCESS_TOKEN }}
 
       - name: Update GitHub profile
         run: |
